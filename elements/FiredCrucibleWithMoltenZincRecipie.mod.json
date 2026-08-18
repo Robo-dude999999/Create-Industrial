@@ -1,0 +1,27 @@
+{
+  "_fv": 85,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Blasting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [
+      {
+        "value": "CUSTOM:FiredCrucibleWithIron"
+      }
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 2.0,
+    "cookingTime": 2500,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "blastingInputStack": {
+      "value": "CUSTOM:FiredCrucibleWithZinc"
+    },
+    "blastingReturnStack": {
+      "value": "CUSTOM:FiredCrucibleWithMoltenZinc"
+    },
+    "name": "fired_crucible_with_molten_zinc_recipie",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "create_industrial:plastic_ingot"
+    }
+  ],
+  "results": [
+    {
+      "id": "create_industrial:plastic_sheet"
+    }
+  ]
+}

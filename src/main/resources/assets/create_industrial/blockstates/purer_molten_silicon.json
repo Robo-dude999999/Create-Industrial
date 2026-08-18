@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "create_industrial:block/purer_molten_silicon"
+    }
+  }
+}

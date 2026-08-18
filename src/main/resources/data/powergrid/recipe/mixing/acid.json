@@ -1,0 +1,23 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "item": "create_industrial:lithium_dust"
+    },
+    {
+      "item": "minecraft:blaze_powder"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 250,
+      "fluid": "createdieselgenerators:ethanol"
+    }
+  ],
+  "results": [
+    {
+      "amount": 300,
+      "id": "powergrid:acid"
+    }
+  ]
+}

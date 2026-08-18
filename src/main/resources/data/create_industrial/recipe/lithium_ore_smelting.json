@@ -1,0 +1,14 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "create_industrial:lithium_ore"
+    }
+  ],
+  "processing_time": 350,
+  "results": [
+    {
+      "id": "create_industrial:lithium_dust"
+    }
+  ]
+}

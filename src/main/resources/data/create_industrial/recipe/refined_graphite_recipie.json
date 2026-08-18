@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "experience": 1,
+  "cookingtime": 100,
+  "ingredient": {
+    "item": "create_industrial:graphite_ingot"
+  },
+  "result": {
+    "id": "create_industrial:refined_graphite_ingot"
+  }
+}

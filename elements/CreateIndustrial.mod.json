@@ -1,0 +1,11 @@
+{
+  "_fv": 85,
+  "_type": "tab",
+  "definition": {
+    "name": "Create: Industrial",
+    "icon": {
+      "value": "CUSTOM:IndustrialIronAlloy"
+    },
+    "showSearch": false
+  }
+}

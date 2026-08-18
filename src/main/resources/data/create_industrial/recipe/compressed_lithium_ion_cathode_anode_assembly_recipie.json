@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "create_industrial:lithium_ion_cathode_anode_assembly"
+    }
+  ],
+  "results": [
+    {
+      "id": "create_industrial:compressed_lithium_ion_cathode_anode_assembly"
+    }
+  ]
+}

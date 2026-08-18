@@ -1,0 +1,27 @@
+{
+  "_fv": 85,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smelting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [
+      {
+        "value": "CUSTOM:UnfiredCrucible"
+      }
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 2.5,
+    "cookingTime": 600,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "smeltingInputStack": {
+      "value": "CUSTOM:UnfiredCrucible"
+    },
+    "smeltingReturnStack": {
+      "value": "CUSTOM:FiredCrucible"
+    },
+    "name": "fired_crucible_recipie",
+    "namespace": "mod"
+  }
+}

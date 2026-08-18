@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "create_industrial:blocks/lithium_ore",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "create_industrial:lithium_dust",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 3
+            },
+            {
+              "function": "minecraft:explosion_decay"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

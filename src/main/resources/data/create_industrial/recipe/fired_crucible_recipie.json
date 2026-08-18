@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "experience": 2.5,
+  "cookingtime": 600,
+  "ingredient": {
+    "item": "create_industrial:unfired_crucible"
+  },
+  "result": {
+    "id": "create_industrial:fired_crucible"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "parent": "create_industrial:custom/vaccum_chamber",
+  "textures": {
+    "all": "create_industrial:block/basin",
+    "particle": "create_industrial:block/basin",
+    "0": "create_industrial:block/conductive_casing",
+    "12": "create_industrial:block/basin",
+    "1": "create_industrial:block/basin_heater",
+    "13": "create_industrial:block/basin_side",
+    "2": "create_industrial:block/basin_canal",
+    "3": "create_industrial:block/framed_glass"
+  },
+  "render_type": "cutout"
+}

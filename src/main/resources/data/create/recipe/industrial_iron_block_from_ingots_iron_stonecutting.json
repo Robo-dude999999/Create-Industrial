@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "create_industrial:industrial_iron_alloy"
+  },
+  "result": {
+    "id": "create:industrial_iron_block",
+    "count": 2
+  }
+}

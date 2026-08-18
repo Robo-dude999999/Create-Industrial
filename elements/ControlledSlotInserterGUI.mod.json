@@ -1,0 +1,76 @@
+{
+  "_fv": 85,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 138,
+    "height": 47,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 136,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_slot_id_to_insert_into",
+          "text": {
+            "fixedValue": "Slot ID to insert into:"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 153,
+          "y": 102,
+          "locked": false
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "0",
+          "name": "num",
+          "width": 120,
+          "height": 20,
+          "x": 154,
+          "y": 116,
+          "locked": false
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 0,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": -30,
+          "y": 251,
+          "locked": false
+        }
+      }
+    ],
+    "onOpen": {
+      "name": "ControlledSlotInserterGUIThisGUIIsOpened"
+    },
+    "onTick": {
+      "name": "ControlledSlotInserterGUIThisGUIIsClosed"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

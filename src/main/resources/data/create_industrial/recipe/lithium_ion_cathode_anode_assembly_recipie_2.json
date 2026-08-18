@@ -1,0 +1,17 @@
+{
+  "type": "create:deploying",
+  "ingredients": [
+    {
+      "item": "create_industrial:refined_graphite_paste_covered_copper_sheet"
+    },
+    {
+      "item": "create_industrial:cobalt_lithium_paste_covered_zinc_sheet"
+    }
+  ],
+  "keep_held_item": false,
+  "results": [
+    {
+      "id": "create_industrial:lithium_ion_cathode_anode_assembly"
+    }
+  ]
+}

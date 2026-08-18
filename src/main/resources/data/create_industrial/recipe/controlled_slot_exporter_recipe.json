@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcd",
+    " e "
+  ],
+  "key": {
+    "a": {
+      "item": "create_industrial:plastic_sheet"
+    },
+    "b": {
+      "item": "create:andesite_funnel"
+    },
+    "c": {
+      "item": "create:industrial_iron_block"
+    },
+    "d": {
+      "item": "create:fluid_valve"
+    },
+    "e": {
+      "item": "create:electron_tube"
+    }
+  },
+  "result": {
+    "id": "create_industrial:controlled_slot_exporter",
+    "count": 1
+  }
+}

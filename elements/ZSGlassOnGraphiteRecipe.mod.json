@@ -1,0 +1,30 @@
+{
+  "_fv": 85,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "vaccum_chamber_recipe_type",
+    "ingredients": [
+      {
+        "value": "CUSTOM:SelenidePowder"
+      },
+      {
+        "value": "Blocks.MUD_BRICK_SLAB"
+      },
+      {
+        "value": "CUSTOM:GraphiteIngot"
+      }
+    ],
+    "integers": [],
+    "strings": [],
+    "recipetype": "VaccumChamberRecipeType",
+    "results": [
+      {
+        "value": "CUSTOM:ZSGlassOnGraphite"
+      }
+    ],
+    "resultCounts": [
+      1
+    ],
+    "count": 0
+  }
+}

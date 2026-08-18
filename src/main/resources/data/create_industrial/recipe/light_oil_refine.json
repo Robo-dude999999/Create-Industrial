@@ -1,0 +1,22 @@
+{
+  "type": "createdieselgenerators:distillation",
+  "ingredients": [
+    {
+      "type": "fluid_stack",
+      "fluid": "create_industrial:light_oil",
+      "amount": 100
+    }
+  ],
+  "heat_requirement": "heated",
+  "processing_time": 60,
+  "results": [
+    {
+      "id": "create_industrial:propyline",
+      "amount": 50
+    },
+    {
+      "id": "createdieselgenerators:ethanol",
+      "amount": 50
+    }
+  ]
+}

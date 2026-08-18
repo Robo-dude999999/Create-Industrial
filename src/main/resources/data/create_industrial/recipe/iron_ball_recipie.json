@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "b"
+  ],
+  "key": {
+    "a": {
+      "item": "create_industrial:fired_crucible_with_molten_iron"
+    },
+    "b": {
+      "item": "create_industrial:small_ball_mold"
+    }
+  },
+  "result": {
+    "id": "create_industrial:iron_ball",
+    "count": 2
+  }
+}

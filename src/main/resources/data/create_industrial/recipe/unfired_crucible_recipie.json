@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a a",
+    " a "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:clay_ball"
+    }
+  },
+  "result": {
+    "id": "create_industrial:unfired_crucible",
+    "count": 1
+  }
+}

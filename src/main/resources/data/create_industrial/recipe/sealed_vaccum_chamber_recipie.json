@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "b",
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "create:basin"
+    },
+    "b": {
+      "tag": "c:glass_blocks"
+    }
+  },
+  "result": {
+    "id": "create_industrial:sealed_vaccum_chamber",
+    "count": 1
+  }
+}

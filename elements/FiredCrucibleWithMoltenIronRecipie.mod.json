@@ -1,0 +1,27 @@
+{
+  "_fv": 85,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Blasting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [
+      {
+        "value": "CUSTOM:FiredCrucibleWithIron"
+      }
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 2.0,
+    "cookingTime": 3000,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "blastingInputStack": {
+      "value": "CUSTOM:FiredCrucibleWithIron"
+    },
+    "blastingReturnStack": {
+      "value": "CUSTOM:FiredCrucibleWithMoltenIron"
+    },
+    "name": "fired_crucible_with_molten_iron_recipie",
+    "namespace": "mod"
+  }
+}

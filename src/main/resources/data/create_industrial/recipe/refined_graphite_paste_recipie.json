@@ -1,0 +1,23 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "superheated",
+  "ingredients": [
+    {
+      "item": "create_industrial:refined_graphite_ingot"
+    },
+    {
+      "item": "minecraft:redstone"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 250,
+      "fluid": "create_industrial:liquid_slime"
+    }
+  ],
+  "results": [
+    {
+      "amount": 500,
+      "id": "create_industrial:refined_graphite_paste"
+    }
+  ]
+}

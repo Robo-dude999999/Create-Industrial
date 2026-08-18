@@ -1,0 +1,27 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "create_industrial:purified_clay_ball"
+    },
+    {
+      "item": "create_industrial:refined_graphite_ingot"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 500,
+      "fluid": "create_industrial:propyline"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 250,
+      "fluid": "createdieselgenerators:ethanol"
+    }
+  ],
+  "results": [
+    {
+      "amount": 1000,
+      "id": "create_industrial:molten_plastic"
+    }
+  ]
+}

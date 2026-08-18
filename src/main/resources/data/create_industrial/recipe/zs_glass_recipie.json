@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "create_industrial:zs_glass_on_graphite"
+    }
+  },
+  "result": {
+    "id": "create_industrial:zs_glass",
+    "count": 1
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "type": "neoforge:single",
+      "amount": 100,
+      "fluid": "minecraft:lava"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 200,
+      "fluid": "create_industrial:liquid_silicon"
+    }
+  ],
+  "results": [
+    {
+      "amount": 250,
+      "id": "create_industrial:purer_molten_silicon"
+    },
+    {
+      "amount": 50,
+      "id": "northstar:carbon"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "type": "createdieselgenerators:distillation",
+  "ingredients": [
+    {
+      "type": "fluid_stack",
+      "fluid": "create_industrial:purer_molten_silicon",
+      "amount": 500
+    }
+  ],
+  "heat_requirement": "superheated",
+  "processing_time": 80,
+  "results": [
+    {
+      "id": "create_industrial:glowstone_fluid",
+      "amount": 50
+    },
+    {
+      "id": "create_industrial:molten_boron",
+      "amount": 50
+    },
+    {
+      "id": "create_industrial:purest_molten_silicon",
+      "amount": 400
+    }
+  ]
+}

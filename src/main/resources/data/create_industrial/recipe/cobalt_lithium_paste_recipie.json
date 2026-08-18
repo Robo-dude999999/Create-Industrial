@@ -1,0 +1,27 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "item": "create_industrial:lithium_dust"
+    },
+    {
+      "item": "minecraft:redstone"
+    },
+    {
+      "item": "create_industrial:cobalt_crumbles"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 250,
+      "fluid": "create_industrial:liquid_slime"
+    }
+    
+  ],
+  "results": [
+    {
+      "amount": 500,
+      "id": "create_industrial:cobalt_lithium_paste"
+    }
+  ]
+}

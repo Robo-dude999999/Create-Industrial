@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a a",
+    " b ",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "create_industrial:iron_ball"
+    },
+    "b": {
+      "item": "create_industrial:iron_ring"
+    }
+  },
+  "result": {
+    "id": "create_industrial:ball_bearing",
+    "count": 1
+  }
+}

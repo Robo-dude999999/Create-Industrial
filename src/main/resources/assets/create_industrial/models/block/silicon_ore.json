@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "create_industrial:block/silicon_ore",
+    "up": "create_industrial:block/silicon_ore",
+    "north": "create_industrial:block/silicon_ore",
+    "east": "create_industrial:block/silicon_ore",
+    "south": "create_industrial:block/silicon_ore",
+    "west": "create_industrial:block/silicon_ore",
+    "particle": "create_industrial:block/silicon_ore"
+  },
+  "render_type": "solid"
+}

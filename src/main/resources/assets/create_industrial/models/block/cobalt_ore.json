@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "create_industrial:block/cobaltore",
+    "up": "create_industrial:block/cobaltore",
+    "north": "create_industrial:block/cobaltore",
+    "east": "create_industrial:block/cobaltore",
+    "south": "create_industrial:block/cobaltore",
+    "west": "create_industrial:block/cobaltore",
+    "particle": "create_industrial:block/cobaltore"
+  },
+  "render_type": "solid"
+}

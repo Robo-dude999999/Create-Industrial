@@ -1,0 +1,18 @@
+{
+  "replace": false,
+  "values": [
+    "create_industrial:sticky_graphite",
+    "create_industrial:propyline",
+    "create_industrial:refined_graphite_paste",
+    "create_industrial:molten_boron",
+    "create_industrial:glowstone_fluid",
+    "create_industrial:purest_molten_silicon",
+    "create_industrial:purer_molten_silicon",
+    "create_industrial:liquid_silicon",
+    "create_industrial:liquid_slime",
+    "create_industrial:molten_plastic",
+    "create_industrial:heavy_oil",
+    "create_industrial:cobalt_lithium_paste",
+    "create_industrial:light_oil"
+  ]
+}

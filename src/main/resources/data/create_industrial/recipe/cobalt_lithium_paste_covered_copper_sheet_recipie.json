@@ -1,0 +1,18 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "tag": "c:plates/copper"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 125,
+      "fluid": "create_industrial:refined_graphite_paste"
+    }
+  ],
+  "results": [
+    {
+      "id": "create_industrial:refined_graphite_paste_covered_copper_sheet"
+    }
+  ]
+}

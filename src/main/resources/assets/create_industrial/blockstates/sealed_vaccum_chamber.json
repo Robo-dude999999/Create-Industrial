@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "create_industrial:block/sealed_vaccum_chamber"
+    },
+    "facing=east": {
+      "model": "create_industrial:block/sealed_vaccum_chamber",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "create_industrial:block/sealed_vaccum_chamber",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "create_industrial:block/sealed_vaccum_chamber",
+      "y": 270
+    }
+  }
+}

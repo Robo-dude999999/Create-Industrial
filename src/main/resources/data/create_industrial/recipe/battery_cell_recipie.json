@@ -1,0 +1,68 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "create_industrial:compressed_lithium_ion_cathode_anode_assembly"
+  },
+  "results": [
+    {
+      "id": "create_industrial:battery_cell"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create_industrial:incomplete_battery_cell"
+        },
+        [
+          {
+            "tag": "c:plates/iron"
+          },
+          {
+            "tag": "c:plates/copper"
+          }
+        ]
+      ],
+      "results": [
+        {
+          "id": "create_industrial:incomplete_battery_cell"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create_industrial:incomplete_battery_cell"
+        },
+        [
+          {
+            "item": "create_industrial:plastic_sheet"
+          }
+        ]
+      ],
+      "results": [
+        {
+          "id": "create_industrial:incomplete_battery_cell"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "create_industrial:incomplete_battery_cell"
+        }
+      ],
+      "results": [
+        {
+          "id": "create_industrial:incomplete_battery_cell"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "create_industrial:incomplete_battery_cell"
+  }
+}

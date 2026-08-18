@@ -1,0 +1,10 @@
+{
+  "parent": "create_industrial:custom/exporter",
+  "textures": {
+    "all": "create_industrial:block/hose",
+    "particle": "create_industrial:block/hose",
+    "0": "create_industrial:block/controlledslotinsertertexture",
+    "1": "create_industrial:block/hose"
+  },
+  "render_type": "solid"
+}

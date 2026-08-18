@@ -1,0 +1,27 @@
+{
+  "_fv": 85,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Stone cutting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [
+      {
+        "value": "Items.IRON_INGOT"
+      }
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "stoneCuttingInputStack": {
+      "value": "Items.IRON_INGOT"
+    },
+    "stoneCuttingReturnStack": {
+      "value": "CUSTOM:IronRing"
+    },
+    "name": "iron_ring_recipie",
+    "namespace": "mod"
+  }
+}

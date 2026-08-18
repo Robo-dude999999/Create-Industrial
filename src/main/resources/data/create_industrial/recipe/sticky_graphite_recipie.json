@@ -1,0 +1,22 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "type": "neoforge:single",
+      "amount": 500,
+      "fluid": "northstar:carbon"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 250,
+      "fluid": "create_industrial:liquid_slime"
+    }
+  ],
+  "results": [
+    {
+      "amount": 1000,
+      "id": "create_industrial:sticky_graphite"
+    }
+  ]
+}

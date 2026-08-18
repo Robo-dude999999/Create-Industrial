@@ -1,0 +1,1793 @@
+{
+  "mod_elements": [
+    {
+      "name": "IndustrialIronAlloy",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "industrial_iron_alloy",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createindustrial/item/IndustrialIronAlloyItem.java",
+          "src/main/resources/assets/create_industrial/models/item/industrial_iron_alloy.json"
+        ]
+      }
+    },
+    {
+      "name": "CreateIndustrial",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "create_industrial",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "IndustrialIronAlloyRecipie",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "industrial_iron_alloy_recipie",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_industrial/recipe/industrial_iron_alloy_recipie.json"
+        ]
+      }
+    },
+    {
+      "name": "UnfiredCrucible",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "unfired_crucible",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createindustrial/item/UnfiredCrucibleItem.java",
+          "src/main/resources/assets/create_industrial/models/item/unfired_crucible.json"
+        ]
+      }
+    },
+    {
+      "name": "FiredCrucible",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fired_crucible",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createindustrial/item/FiredCrucibleItem.java",
+          "src/main/resources/assets/create_industrial/models/item/fired_crucible.json"
+        ]
+      }
+    },
+    {
+      "name": "UnfiredCrucibleRecipie",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "unfired_crucible_recipie",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_industrial/recipe/unfired_crucible_recipie.json"
+        ]
+      }
+    },
+    {
+      "name": "FiredCrucibleRecipie",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fired_crucible_recipie",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_industrial/advancement/recipes/fired_crucible_recipie.json",
+          "src/main/resources/data/create_industrial/recipe/fired_crucible_recipie.json"
+        ]
+      }
+    },
+    {
+      "name": "FiredCrucibleWithIron",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fired_crucible_with_iron",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/create_industrial/models/item/fired_crucible_with_iron.json",
+          "src/main/java/net/mcreator/createindustrial/item/FiredCrucibleWithIronItem.java"
+        ]
+      }
+    },
+    {
+      "name": "FiredCrucibleWithZinc",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fired_crucible_with_zinc",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createindustrial/item/FiredCrucibleWithZincItem.java",
+          "src/main/resources/assets/create_industrial/models/item/fired_crucible_with_zinc.json"
+        ]
+      }
+    },
+    {
+      "name": "FiredCrucibleWithIronRecipie",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fired_crucible_with_iron_recipie",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_industrial/recipe/fired_crucible_with_iron_recipie.json"
+        ]
+      }
+    },
+    {
+      "name": "FiredCrucibleWithZincRecipie",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "fired_crucible_with_zinc_recipie",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_industrial/recipe/fired_crucible_with_zinc_recipie.json"
+        ]
+      }
+    },
+    {
+      "name": "FiredCrucibleWithMoltenZinc",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fired_crucible_with_molten_zinc",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/create_industrial/models/item/fired_crucible_with_molten_zinc.json",
+          "src/main/java/net/mcreator/createindustrial/item/FiredCrucibleWithMoltenZincItem.java"
+        ]
+      }
+    },
+    {
+      "name": "FiredCrucibleWithMoltenIron",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fired_crucible_with_molten_iron",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/create_industrial/models/item/fired_crucible_with_molten_iron.json",
+          "src/main/java/net/mcreator/createindustrial/item/FiredCrucibleWithMoltenIronItem.java"
+        ]
+      }
+    },
+    {
+      "name": "FiredCrucibleWithMoltenIronRecipie",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fired_crucible_with_molten_iron_recipie",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_industrial/recipe/fired_crucible_with_molten_iron_recipie.json",
+          "src/main/resources/data/create_industrial/advancement/recipes/fired_crucible_with_molten_iron_recipie.json"
+        ]
+      }
+    },
+    {
+      "name": "FiredCrucibleWithMoltenZincRecipie",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fired_crucible_with_molten_zinc_recipie",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_industrial/recipe/fired_crucible_with_molten_zinc_recipie.json",
+          "src/main/resources/data/create_industrial/advancement/recipes/fired_crucible_with_molten_zinc_recipie.json"
+        ]
+      }
+    },
+    {
+      "name": "SmallBallMold",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "small_ball_mold",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createindustrial/item/SmallBallMoldItem.java",
+          "src/main/resources/assets/create_industrial/models/item/small_ball_mold.json"
+        ]
+      }
+    },
+    {
+      "name": "SmallBallMoldRecipie",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "small_ball_mold_recipie",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_industrial/advancement/recipes/small_ball_mold_recipie.json",
+          "src/main/resources/data/create_industrial/recipe/small_ball_mold_recipie.json"
+        ]
+      }
+    },
+    {
+      "name": "IronBall",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_ball",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createindustrial/item/IronBallItem.java",
+          "src/main/resources/assets/create_industrial/models/item/iron_ball.json"
+        ]
+      }
+    },
+    {
+      "name": "IronBallRecipie",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_ball_recipie",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_industrial/recipe/iron_ball_recipie.json"
+        ]
+      }
+    },
+    {
+      "name": "IronRing",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_ring",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/create_industrial/models/item/iron_ring.json",
+          "src/main/java/net/mcreator/createindustrial/item/IronRingItem.java"
+        ]
+      }
+    },
+    {
+      "name": "IronRingRecipie",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_ring_recipie",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_industrial/recipe/iron_ring_recipie.json",
+          "src/main/resources/data/create_industrial/advancement/recipes/iron_ring_recipie.json"
+        ]
+      }
+    },
+    {
+      "name": "BallBearing",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ball_bearing",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/create_industrial/models/item/ball_bearing.json",
+          "src/main/java/net/mcreator/createindustrial/item/BallBearingItem.java"
+        ]
+      }
+    },
+    {
+      "name": "BallBearingRecipie",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ball_bearing_recipie",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_industrial/recipe/ball_bearing_recipie.json",
+          "src/main/resources/data/create_industrial/advancement/recipes/ball_bearing_recipie.json"
+        ]
+      }
+    },
+    {
+      "name": "LithiumDust",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lithium_dust",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createindustrial/item/LithiumDustItem.java",
+          "src/main/resources/assets/create_industrial/models/item/lithium_dust.json"
+        ]
+      }
+    },
+    {
+      "name": "LithiumOre",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lithium_ore",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createindustrial/block/LithiumOreBlock.java",
+          "src/main/resources/assets/create_industrial/blockstates/lithium_ore.json",
+          "src/main/resources/data/create_industrial/worldgen/placed_feature/lithium_ore.json",
+          "src/main/resources/assets/create_industrial/models/item/lithium_ore.json",
+          "src/main/resources/data/create_industrial/neoforge/biome_modifier/lithium_ore_biome_modifier.json",
+          "src/main/resources/assets/create_industrial/models/block/lithium_ore.json",
+          "src/main/resources/data/create_industrial/worldgen/configured_feature/lithium_ore.json",
+          "src/main/resources/data/create_industrial/loot_table/blocks/lithium_ore.json"
+        ]
+      }
+    },
+    {
+      "name": "LithiumOreSmelting",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "lithium_ore_smelting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_industrial/recipe/lithium_ore_smelting.json",
+          "src/main/resources/data/create_industrial/advancement/recipes/lithium_ore_smelting.json"
+        ]
+      }
+    },
+    {
+      "name": "CobaltOre",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cobalt_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_industrial/worldgen/configured_feature/cobalt_ore.json",
+          "src/main/java/net/mcreator/createindustrial/block/CobaltOreBlock.java",
+          "src/main/resources/assets/create_industrial/blockstates/cobalt_ore.json",
+          "src/main/resources/assets/create_industrial/models/item/cobalt_ore.json",
+          "src/main/resources/data/create_industrial/neoforge/biome_modifier/cobalt_ore_biome_modifier.json",
+          "src/main/resources/data/create_industrial/loot_table/blocks/cobalt_ore.json",
+          "src/main/resources/assets/create_industrial/models/block/cobalt_ore.json",
+          "src/main/resources/data/create_industrial/worldgen/placed_feature/cobalt_ore.json"
+        ]
+      }
+    },
+    {
+      "name": "CobaltCrumbles",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cobalt_crumbles",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/create_industrial/models/item/cobalt_crumbles.json",
+          "src/main/java/net/mcreator/createindustrial/item/CobaltCrumblesItem.java"
+        ]
+      }
+    },
+    {
+      "name": "LiquidSlimeDrip",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "liquid_slime_drip",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/create_industrial/particles/liquid_slime_drip.json",
+          "src/main/java/net/mcreator/createindustrial/client/particle/LiquidSlimeDripParticle.java"
+        ]
+      }
+    },
+    {
+      "name": "LiquidSlime",
+      "type": "fluid",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "liquid_slime",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createindustrial/block/LiquidSlimeBlock.java",
+          "src/main/resources/assets/create_industrial/models/item/liquid_slime_bucket.json",
+          "src/main/resources/assets/create_industrial/models/block/liquid_slime.json",
+          "src/main/resources/assets/create_industrial/blockstates/liquid_slime.json",
+          "src/main/java/net/mcreator/createindustrial/fluid/types/LiquidSlimeFluidType.java",
+          "src/main/java/net/mcreator/createindustrial/fluid/LiquidSlimeFluid.java",
+          "src/main/java/net/mcreator/createindustrial/item/LiquidSlimeItem.java"
+        ]
+      }
+    },
+    {
+      "name": "LiquidSlimeRecipie",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "liquid_slime_recipie",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_industrial/recipe/liquid_slime_recipie.json"
+        ]
+      }
+    },
+    {
+      "name": "BlockLiquidSlimeRecipie",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "block_liquid_slime_recipie",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_industrial/recipe/block_liquid_slime_recipie.json"
+        ]
+      }
+    },
+    {
+      "name": "CobaltLithiumPaste",
+      "type": "fluid",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cobalt_lithium_paste",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createindustrial/block/CobaltLithiumPasteBlock.java",
+          "src/main/resources/assets/create_industrial/models/item/cobalt_lithium_paste_bucket.json",
+          "src/main/resources/assets/create_industrial/models/block/cobalt_lithium_paste.json",
+          "src/main/java/net/mcreator/createindustrial/item/CobaltLithiumPasteItem.java",
+          "src/main/java/net/mcreator/createindustrial/fluid/CobaltLithiumPasteFluid.java",
+          "src/main/java/net/mcreator/createindustrial/fluid/types/CobaltLithiumPasteFluidType.java",
+          "src/main/resources/assets/create_industrial/blockstates/cobalt_lithium_paste.json"
+        ]
+      }
+    },
+    {
+      "name": "CobaltLithiumPasteRecipie",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "cobalt_lithium_paste_recipie",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_industrial/recipe/cobalt_lithium_paste_recipie.json"
+        ]
+      }
+    },
+    {
+      "name": "StickyGraphiteRecipie",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "sticky_graphite_recipie",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_industrial/recipe/sticky_graphite_recipie.json"
+        ]
+      }
+    },
+    {
+      "name": "StickyGraphite",
+      "type": "fluid",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sticky_graphite",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createindustrial/block/StickyGraphiteBlock.java",
+          "src/main/java/net/mcreator/createindustrial/fluid/types/StickyGraphiteFluidType.java",
+          "src/main/resources/assets/create_industrial/models/item/sticky_graphite_bucket.json",
+          "src/main/java/net/mcreator/createindustrial/fluid/StickyGraphiteFluid.java",
+          "src/main/resources/assets/create_industrial/blockstates/sticky_graphite.json",
+          "src/main/resources/assets/create_industrial/models/block/sticky_graphite.json",
+          "src/main/java/net/mcreator/createindustrial/item/StickyGraphiteItem.java"
+        ]
+      }
+    },
+    {
+      "name": "GraphiteIngot",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "graphite_ingot",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/create_industrial/models/item/graphite_ingot.json",
+          "src/main/java/net/mcreator/createindustrial/item/GraphiteIngotItem.java"
+        ]
+      }
+    },
+    {
+      "name": "GraphiteIngotRecipie",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "graphite_ingot_recipie",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_industrial/recipe/graphite_ingot_recipie.json"
+        ]
+      }
+    },
+    {
+      "name": "RefinedGraphiteIngot",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "refined_graphite_ingot",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createindustrial/item/RefinedGraphiteIngotItem.java",
+          "src/main/resources/assets/create_industrial/models/item/refined_graphite_ingot.json"
+        ]
+      }
+    },
+    {
+      "name": "RefinedGraphiteRecipie",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "refined_graphite_recipie",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_industrial/advancement/recipes/refined_graphite_recipie.json",
+          "src/main/resources/data/create_industrial/recipe/refined_graphite_recipie.json"
+        ]
+      }
+    },
+    {
+      "name": "RefinedGraphitePasteRecipie",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "refined_graphite_paste_recipie",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_industrial/recipe/refined_graphite_paste_recipie.json"
+        ]
+      }
+    },
+    {
+      "name": "RefinedGraphitePaste",
+      "type": "fluid",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "refined_graphite_paste",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createindustrial/item/RefinedGraphitePasteItem.java",
+          "src/main/resources/assets/create_industrial/models/block/refined_graphite_paste.json",
+          "src/main/java/net/mcreator/createindustrial/fluid/RefinedGraphitePasteFluid.java",
+          "src/main/resources/assets/create_industrial/blockstates/refined_graphite_paste.json",
+          "src/main/java/net/mcreator/createindustrial/block/RefinedGraphitePasteBlock.java",
+          "src/main/resources/assets/create_industrial/models/item/refined_graphite_paste_bucket.json",
+          "src/main/java/net/mcreator/createindustrial/fluid/types/RefinedGraphitePasteFluidType.java"
+        ]
+      }
+    },
+    {
+      "name": "CobaltLithiumPasteCoveredZincSheet",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cobalt_lithium_paste_covered_zinc_sheet",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/create_industrial/models/item/cobalt_lithium_paste_covered_zinc_sheet.json",
+          "src/main/java/net/mcreator/createindustrial/item/CobaltLithiumPasteCoveredZincSheetItem.java"
+        ]
+      }
+    },
+    {
+      "name": "CobaltLithiumPasteCoveredZincSheetRecipie",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "cobalt_lithium_paste_covered_zinc_sheet_recipie",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_industrial/recipe/cobalt_lithium_paste_covered_zinc_sheet_recipie.json"
+        ]
+      }
+    },
+    {
+      "name": "RefinedGraphitePasteCoveredCopperSheet",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "refined_graphite_paste_covered_copper_sheet",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/create_industrial/models/item/refined_graphite_paste_covered_copper_sheet.json",
+          "src/main/java/net/mcreator/createindustrial/item/RefinedGraphitePasteCoveredCopperSheetItem.java"
+        ]
+      }
+    },
+    {
+      "name": "CobaltLithiumPasteCoveredCopperSheetRecipie",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "cobalt_lithium_paste_covered_copper_sheet_recipie",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_industrial/recipe/cobalt_lithium_paste_covered_copper_sheet_recipie.json"
+        ]
+      }
+    },
+    {
+      "name": "LithiumIonCathodeAnodeAssembly",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lithium_ion_cathode_anode_assembly",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/create_industrial/models/item/lithium_ion_cathode_anode_assembly.json",
+          "src/main/java/net/mcreator/createindustrial/item/LithiumIonCathodeAnodeAssemblyItem.java"
+        ]
+      }
+    },
+    {
+      "name": "LithiumIonCathodeAnodeAssemblyRecipie1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "lithium_ion_cathode_anode_assembly_recipie_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_industrial/recipe/lithium_ion_cathode_anode_assembly_recipie_1.json"
+        ]
+      }
+    },
+    {
+      "name": "LithiumIonCathodeAnodeAssemblyRecipie2",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "lithium_ion_cathode_anode_assembly_recipie_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_industrial/recipe/lithium_ion_cathode_anode_assembly_recipie_2.json"
+        ]
+      }
+    },
+    {
+      "name": "CompressedLithiumIonCathodeAnodeAssembly",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "compressed_lithium_ion_cathode_anode_assembly",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/create_industrial/models/item/compressed_lithium_ion_cathode_anode_assembly.json",
+          "src/main/java/net/mcreator/createindustrial/item/CompressedLithiumIonCathodeAnodeAssemblyItem.java"
+        ]
+      }
+    },
+    {
+      "name": "PurifiedClayBall",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purified_clay_ball",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createindustrial/item/PurifiedClayBallItem.java",
+          "src/main/resources/assets/create_industrial/models/item/purified_clay_ball.json"
+        ]
+      }
+    },
+    {
+      "name": "PurifiedClayBallRecipie",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "purified_clay_ball_recipie",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_industrial/recipe/purified_clay_ball_recipie.json"
+        ]
+      }
+    },
+    {
+      "name": "MoltenPlastic",
+      "type": "fluid",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "molten_plastic",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/create_industrial/models/block/molten_plastic.json",
+          "src/main/resources/assets/create_industrial/blockstates/molten_plastic.json",
+          "src/main/java/net/mcreator/createindustrial/block/MoltenPlasticBlock.java",
+          "src/main/java/net/mcreator/createindustrial/item/MoltenPlasticItem.java",
+          "src/main/java/net/mcreator/createindustrial/fluid/MoltenPlasticFluid.java",
+          "src/main/java/net/mcreator/createindustrial/fluid/types/MoltenPlasticFluidType.java",
+          "src/main/resources/assets/create_industrial/models/item/molten_plastic_bucket.json"
+        ]
+      }
+    },
+    {
+      "name": "MoltenPlasticRecipie",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "molten_plastic_recipie",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_industrial/recipe/molten_plastic_recipie.json"
+        ]
+      }
+    },
+    {
+      "name": "HeavyOil",
+      "type": "fluid",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "heavy_oil",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createindustrial/fluid/HeavyOilFluid.java",
+          "src/main/java/net/mcreator/createindustrial/block/HeavyOilBlock.java",
+          "src/main/resources/assets/create_industrial/models/block/heavy_oil.json",
+          "src/main/java/net/mcreator/createindustrial/item/HeavyOilItem.java",
+          "src/main/resources/assets/create_industrial/blockstates/heavy_oil.json",
+          "src/main/resources/assets/create_industrial/models/item/heavy_oil_bucket.json",
+          "src/main/java/net/mcreator/createindustrial/fluid/types/HeavyOilFluidType.java"
+        ]
+      }
+    },
+    {
+      "name": "LightOil",
+      "type": "fluid",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "light_oil",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createindustrial/fluid/types/LightOilFluidType.java",
+          "src/main/java/net/mcreator/createindustrial/fluid/LightOilFluid.java",
+          "src/main/java/net/mcreator/createindustrial/block/LightOilBlock.java",
+          "src/main/resources/assets/create_industrial/blockstates/light_oil.json",
+          "src/main/resources/assets/create_industrial/models/item/light_oil_bucket.json",
+          "src/main/resources/assets/create_industrial/models/block/light_oil.json",
+          "src/main/java/net/mcreator/createindustrial/item/LightOilItem.java"
+        ]
+      }
+    },
+    {
+      "name": "FirstOilRefine",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "first_oil_refine",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_industrial/recipe/first_oil_refine.json"
+        ]
+      }
+    },
+    {
+      "name": "Propyline",
+      "type": "fluid",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "propyline",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/create_industrial/models/item/propyline_bucket.json",
+          "src/main/resources/assets/create_industrial/models/block/propyline.json",
+          "src/main/resources/assets/create_industrial/blockstates/propyline.json",
+          "src/main/java/net/mcreator/createindustrial/item/PropylineItem.java",
+          "src/main/java/net/mcreator/createindustrial/fluid/types/PropylineFluidType.java",
+          "src/main/java/net/mcreator/createindustrial/fluid/PropylineFluid.java",
+          "src/main/java/net/mcreator/createindustrial/block/PropylineBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "LightOilRefine",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "light_oil_refine",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_industrial/recipe/light_oil_refine.json"
+        ]
+      }
+    },
+    {
+      "name": "PlasticIngot",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "plastic_ingot",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createindustrial/item/PlasticIngotItem.java",
+          "src/main/resources/assets/create_industrial/models/item/plastic_ingot.json"
+        ]
+      }
+    },
+    {
+      "name": "PlasticIngotRecipie",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "plastic_ingot_recipie",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_industrial/recipe/plastic_ingot_recipie.json"
+        ]
+      }
+    },
+    {
+      "name": "CompressedLithiumIonCathodeAnodeAssemblyRecipie",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "compressed_lithium_ion_cathode_anode_assembly_recipie",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_industrial/recipe/compressed_lithium_ion_cathode_anode_assembly_recipie.json"
+        ]
+      }
+    },
+    {
+      "name": "PlasticSheet",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "plastic_sheet",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createindustrial/item/PlasticSheetItem.java",
+          "src/main/resources/assets/create_industrial/models/item/plastic_sheet.json"
+        ]
+      }
+    },
+    {
+      "name": "PlasticSheetRecipie",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "plastic_sheet_recipie",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_industrial/recipe/plastic_sheet_recipie.json"
+        ]
+      }
+    },
+    {
+      "name": "IncompleteBatteryCell",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "incomplete_battery_cell",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/create_industrial/models/item/incomplete_battery_cell.json",
+          "src/main/java/net/mcreator/createindustrial/item/IncompleteBatteryCellItem.java"
+        ]
+      }
+    },
+    {
+      "name": "BatteryCell",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "battery_cell",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createindustrial/item/BatteryCellItem.java",
+          "src/main/resources/assets/create_industrial/models/item/battery_cell.json"
+        ]
+      }
+    },
+    {
+      "name": "BatteryCellRecipie",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "battery_cell_recipie",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_industrial/recipe/battery_cell_recipie.json"
+        ]
+      }
+    },
+    {
+      "name": "SelenideMudByproduct",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "selenide_mud_byproduct",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/create_industrial/models/item/selenide_mud_byproduct.json",
+          "src/main/java/net/mcreator/createindustrial/item/SelenideMudByproductItem.java"
+        ]
+      }
+    },
+    {
+      "name": "SealedVaccumChamber",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sealed_vaccum_chamber",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_industrial/loot_table/blocks/sealed_vaccum_chamber.json",
+          "src/main/java/net/mcreator/createindustrial/block/entity/SealedVaccumChamberBlockEntity.java",
+          "src/main/resources/assets/create_industrial/models/block/sealed_vaccum_chamber.json",
+          "src/main/java/net/mcreator/createindustrial/block/SealedVaccumChamberBlock.java",
+          "src/main/resources/assets/create_industrial/models/item/sealed_vaccum_chamber.json",
+          "src/main/resources/assets/create_industrial/blockstates/sealed_vaccum_chamber.json"
+        ]
+      }
+    },
+    {
+      "name": "SealedVaccumChamberRecipie",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "sealed_vaccum_chamber_recipie",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_industrial/recipe/sealed_vaccum_chamber_recipie.json"
+        ]
+      }
+    },
+    {
+      "name": "SelenidePowder",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "selenide_powder",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createindustrial/item/SelenidePowderItem.java",
+          "src/main/resources/assets/create_industrial/models/item/selenide_powder.json"
+        ]
+      }
+    },
+    {
+      "name": "SelendidePowderRecipie",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "selendide_powder_recipie",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_industrial/recipe/selendide_powder_recipie.json",
+          "src/main/resources/data/create_industrial/advancement/recipes/selendide_powder_recipie.json"
+        ]
+      }
+    },
+    {
+      "name": "VaccumChamberRecipeType",
+      "type": "jeirecipetype",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vaccum_chamber_recipe_type",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createindustrial/jei_recipes/VaccumChamberRecipeTypeRecipeCategory.java",
+          "src/main/java/net/mcreator/createindustrial/jei_recipes/VaccumChamberRecipeTypeRecipe.java"
+        ]
+      }
+    },
+    {
+      "name": "SealedVaccumChamberGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sealed_vaccum_chamber_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createindustrial/network/SealedVaccumChamberGUISlotMessage.java",
+          "src/main/java/net/mcreator/createindustrial/world/inventory/SealedVaccumChamberGUIMenu.java",
+          "src/main/java/net/mcreator/createindustrial/client/gui/SealedVaccumChamberGUIScreen.java"
+        ]
+      }
+    },
+    {
+      "name": "SealedVaccumChamberOnTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sealed_vaccum_chamber_on_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/createindustrial/procedures/SealedVaccumChamberOnTickUpdateProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "VaccumChamberGUITickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vaccum_chamber_gui_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/createindustrial/procedures/VaccumChamberGUITickUpdateProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "ZSGlassOnGraphite",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zs_glass_on_graphite",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createindustrial/item/ZSGlassOnGraphiteItem.java",
+          "src/main/resources/assets/create_industrial/models/item/zs_glass_on_graphite.json"
+        ]
+      }
+    },
+    {
+      "name": "ZSGlassOnGraphiteRecipe",
+      "type": "jeirecipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "zs_glass_on_graphite_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_industrial/recipe/zs_glass_on_graphite_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "ZSGlass",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zs_glass",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createindustrial/item/ZSGlassItem.java",
+          "src/main/resources/assets/create_industrial/models/item/zs_glass.json"
+        ]
+      }
+    },
+    {
+      "name": "ZSGlassRecipie",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zs_glass_recipie",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_industrial/recipe/zs_glass_recipie.json"
+        ]
+      }
+    },
+    {
+      "name": "PurifiedZSGlass",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purified_zs_glass",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/create_industrial/models/item/purified_zs_glass.json",
+          "src/main/java/net/mcreator/createindustrial/item/PurifiedZSGlassItem.java"
+        ]
+      }
+    },
+    {
+      "name": "PurifiedZSGlassRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purified_zs_glass_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_industrial/recipe/purified_zs_glass_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "GlowstoneFluid",
+      "type": "fluid",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glowstone_fluid",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createindustrial/block/GlowstoneFluidBlock.java",
+          "src/main/resources/assets/create_industrial/models/item/glowstone_fluid_bucket.json",
+          "src/main/java/net/mcreator/createindustrial/fluid/types/GlowstoneFluidFluidType.java",
+          "src/main/resources/assets/create_industrial/models/block/glowstone_fluid.json",
+          "src/main/java/net/mcreator/createindustrial/fluid/GlowstoneFluidFluid.java",
+          "src/main/resources/assets/create_industrial/blockstates/glowstone_fluid.json",
+          "src/main/java/net/mcreator/createindustrial/item/GlowstoneFluidItem.java"
+        ]
+      }
+    },
+    {
+      "name": "GlowstoneFluidRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "glowstone_fluid_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_industrial/recipe/glowstone_fluid_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "PhosphorusPellets",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "phosphorus_pellets",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createindustrial/item/PhosphorusPelletsItem.java",
+          "src/main/resources/assets/create_industrial/models/item/phosphorus_pellets.json"
+        ]
+      }
+    },
+    {
+      "name": "PhosphorusPelletsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "phosphorus_pellets_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_industrial/recipe/phosphorus_pellets_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "SiliconOre",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "silicon_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_industrial/worldgen/configured_feature/silicon_ore.json",
+          "src/main/resources/assets/create_industrial/blockstates/silicon_ore.json",
+          "src/main/resources/assets/create_industrial/models/block/silicon_ore.json",
+          "src/main/resources/data/create_industrial/worldgen/placed_feature/silicon_ore.json",
+          "src/main/resources/data/create_industrial/neoforge/biome_modifier/silicon_ore_biome_modifier.json",
+          "src/main/java/net/mcreator/createindustrial/block/SiliconOreBlock.java",
+          "src/main/resources/assets/create_industrial/models/item/silicon_ore.json"
+        ]
+      }
+    },
+    {
+      "name": "RawSilicon",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_silicon",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createindustrial/item/RawSiliconItem.java",
+          "src/main/resources/assets/create_industrial/models/item/raw_silicon.json"
+        ]
+      }
+    },
+    {
+      "name": "SiliconSeed",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "silicon_seed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createindustrial/item/SiliconSeedItem.java",
+          "src/main/resources/assets/create_industrial/models/item/silicon_seed.json"
+        ]
+      }
+    },
+    {
+      "name": "SiliconLootTable",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "silicon_loot_table",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_industrial/loot_table/blocks/silicon_ore.json"
+        ]
+      }
+    },
+    {
+      "name": "LiquidSilicon",
+      "type": "fluid",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "liquid_silicon",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createindustrial/block/LiquidSiliconBlock.java",
+          "src/main/resources/assets/create_industrial/blockstates/liquid_silicon.json",
+          "src/main/resources/assets/create_industrial/models/item/liquid_silicon_bucket.json",
+          "src/main/java/net/mcreator/createindustrial/fluid/types/LiquidSiliconFluidType.java",
+          "src/main/java/net/mcreator/createindustrial/fluid/LiquidSiliconFluid.java",
+          "src/main/java/net/mcreator/createindustrial/item/LiquidSiliconItem.java",
+          "src/main/resources/assets/create_industrial/models/block/liquid_silicon.json"
+        ]
+      }
+    },
+    {
+      "name": "LiquidSiliconRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "liquid_silicon_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_industrial/recipe/liquid_silicon_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "LiquidSiliconRecipe2",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "liquid_silicon_recipe_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_industrial/recipe/liquid_silicon_recipe_2.json"
+        ]
+      }
+    },
+    {
+      "name": "PurerMoltenSilicon",
+      "type": "fluid",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purer_molten_silicon",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createindustrial/fluid/types/PurerMoltenSiliconFluidType.java",
+          "src/main/java/net/mcreator/createindustrial/item/PurerMoltenSiliconItem.java",
+          "src/main/java/net/mcreator/createindustrial/fluid/PurerMoltenSiliconFluid.java",
+          "src/main/resources/assets/create_industrial/models/item/purer_molten_silicon_bucket.json",
+          "src/main/java/net/mcreator/createindustrial/block/PurerMoltenSiliconBlock.java",
+          "src/main/resources/assets/create_industrial/models/block/purer_molten_silicon.json",
+          "src/main/resources/assets/create_industrial/blockstates/purer_molten_silicon.json"
+        ]
+      }
+    },
+    {
+      "name": "PurerMoltenSiliconRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "purer_molten_silicon_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_industrial/recipe/purer_molten_silicon_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "PurestMoltenSilicon",
+      "type": "fluid",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purest_molten_silicon",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createindustrial/item/PurestMoltenSiliconItem.java",
+          "src/main/resources/assets/create_industrial/models/item/purest_molten_silicon_bucket.json",
+          "src/main/java/net/mcreator/createindustrial/fluid/types/PurestMoltenSiliconFluidType.java",
+          "src/main/resources/assets/create_industrial/models/block/purest_molten_silicon.json",
+          "src/main/java/net/mcreator/createindustrial/block/PurestMoltenSiliconBlock.java",
+          "src/main/resources/assets/create_industrial/blockstates/purest_molten_silicon.json",
+          "src/main/java/net/mcreator/createindustrial/fluid/PurestMoltenSiliconFluid.java"
+        ]
+      }
+    },
+    {
+      "name": "MoltenBoron",
+      "type": "fluid",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "molten_boron",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/create_industrial/blockstates/molten_boron.json",
+          "src/main/resources/assets/create_industrial/models/block/molten_boron.json",
+          "src/main/java/net/mcreator/createindustrial/block/MoltenBoronBlock.java",
+          "src/main/java/net/mcreator/createindustrial/item/MoltenBoronItem.java",
+          "src/main/resources/assets/create_industrial/models/item/molten_boron_bucket.json",
+          "src/main/java/net/mcreator/createindustrial/fluid/types/MoltenBoronFluidType.java",
+          "src/main/java/net/mcreator/createindustrial/fluid/MoltenBoronFluid.java"
+        ]
+      }
+    },
+    {
+      "name": "PurestMoltenSiliconRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "purest_molten_silicon_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_industrial/recipe/purest_molten_silicon_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "ControlledSlotInserter",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "controlled_slot_inserter",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_industrial/loot_table/blocks/controlled_slot_inserter.json",
+          "src/main/resources/assets/create_industrial/blockstates/controlled_slot_inserter.json",
+          "src/main/resources/assets/create_industrial/models/block/controlled_slot_inserter.json",
+          "src/main/resources/assets/create_industrial/models/item/controlled_slot_inserter.json",
+          "src/main/java/net/mcreator/createindustrial/block/ControlledSlotInserterBlock.java",
+          "src/main/java/net/mcreator/createindustrial/block/entity/ControlledSlotInserterBlockEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "ControlledSlotInserterRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "controlled_slot_inserter_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_industrial/recipe/controlled_slot_inserter_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "ControlledSlotInserterGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "controlled_slot_inserter_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createindustrial/client/gui/ControlledSlotInserterGUIScreen.java",
+          "src/main/java/net/mcreator/createindustrial/world/inventory/ControlledSlotInserterGUIMenu.java"
+        ]
+      }
+    },
+    {
+      "name": "ControlledSlotInserterGUIThisGUIIsClosed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "controlled_slot_inserter_gui_this_gui_is_closed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/createindustrial/procedures/ControlledSlotInserterGUIThisGUIIsClosedProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "ControlledSlotInserterOnTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "controlled_slot_inserter_on_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/createindustrial/procedures/ControlledSlotInserterOnTickUpdateProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "ControlledSlotInserterGUIThisGUIIsOpened",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "controlled_slot_inserter_gui_this_gui_is_opened",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/createindustrial/procedures/ControlledSlotInserterGUIThisGUIIsOpenedProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "ControlledSlotExporterRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "controlled_slot_exporter_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_industrial/recipe/controlled_slot_exporter_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "ControlledSlotExporter",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "controlled_slot_exporter",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createindustrial/block/entity/ControlledSlotExporterBlockEntity.java",
+          "src/main/resources/assets/create_industrial/models/item/controlled_slot_exporter.json",
+          "src/main/resources/assets/create_industrial/blockstates/controlled_slot_exporter.json",
+          "src/main/resources/data/create_industrial/loot_table/blocks/controlled_slot_exporter.json",
+          "src/main/java/net/mcreator/createindustrial/block/ControlledSlotExporterBlock.java",
+          "src/main/resources/assets/create_industrial/models/block/controlled_slot_exporter.json"
+        ]
+      }
+    },
+    {
+      "name": "ControlledSlotExporterGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "controlled_slot_exporter_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createindustrial/client/gui/ControlledSlotExporterGUIScreen.java",
+          "src/main/java/net/mcreator/createindustrial/world/inventory/ControlledSlotExporterGUIMenu.java"
+        ]
+      }
+    },
+    {
+      "name": "ControlledSlotExporterOnTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "controlled_slot_exporter_on_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/createindustrial/procedures/ControlledSlotExporterOnTickUpdateProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "SealedVaccumChamberOnRandomClientDisplayTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sealed_vaccum_chamber_on_random_client_display_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/createindustrial/procedures/SealedVaccumChamberOnRandomClientDisplayTickProcedure.java"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "tag_elements": {
+    "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:LithiumOre",
+      "CUSTOM:CobaltOre"
+    ],
+    "BLOCKS:minecraft:needs_iron_tool": [
+      "~CUSTOM:LithiumOre",
+      "CUSTOM:CobaltOre"
+    ],
+    "BLOCKS:minecraft:replaceable": [
+      "~CUSTOM:MoltenBoron",
+      "~CUSTOM:PurestMoltenSilicon",
+      "~CUSTOM:PurerMoltenSilicon",
+      "~CUSTOM:LiquidSilicon",
+      "~CUSTOM:GlowstoneFluid",
+      "~CUSTOM:Propyline",
+      "~CUSTOM:LightOil",
+      "~CUSTOM:HeavyOil",
+      "~CUSTOM:MoltenPlastic",
+      "~CUSTOM:RefinedGraphitePaste",
+      "~CUSTOM:StickyGraphite",
+      "~CUSTOM:CobaltLithiumPaste",
+      "~CUSTOM:LiquidSlime"
+    ],
+    "ITEMS:minecraft:enchantable/durability": [
+      "~CUSTOM:IncompleteBatteryCell"
+    ]
+  },
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "item.create_industrial.industrial_iron_alloy": "Industrial Iron Alloy",
+      "item_group.create_industrial.create_industrial": "Create: Industrial",
+      "item.create_industrial.unfired_crucible": "Unfired Crucible",
+      "item.create_industrial.fired_crucible": "Fired Crucible",
+      "item.create_industrial.fired_crucible_with_iron": "Fired Crucible With Iron",
+      "item.create_industrial.fired_crucible_with_zinc": "Fired Crucible With Zinc",
+      "item.create_industrial.fired_crucible_with_molten_zinc": "Fired Crucible With Molten Zinc",
+      "item.create_industrial.fired_crucible_with_molten_iron": "Fired Crucible With Molten Iron",
+      "item.create_industrial.small_ball_mold": "Small Ball Mold",
+      "item.create_industrial.iron_ball": "Iron Ball",
+      "item.create_industrial.iron_ring": "Iron Ring",
+      "item.create_industrial.ball_bearing": "Ball Bearing",
+      "item.create_industrial.lithium_dust": "Lithium",
+      "block.create_industrial.lithium_ore": "Lithium Ore",
+      "block.create_industrial.cobalt_ore": "Cobalt Ore",
+      "item.create_industrial.cobalt_crumbles": "Cobalt Crumbles",
+      "item.create_industrial.liquid_slime_bucket": "Liquid Slime Bucket",
+      "block.create_industrial.liquid_slime": "Liquid Slime",
+      "fluid_type.create_industrial.liquid_slime": "Liquid Slime",
+      "fluid.create_industrial.liquid_slime": "Liquid Slime",
+      "fluid.create_industrial.cobalt_lithium_paste": "Cobalt-Lithium Paste",
+      "block.create_industrial.cobalt_lithium_paste": "Cobalt-Lithium Paste",
+      "fluid_type.create_industrial.cobalt_lithium_paste": "Cobalt-Lithium Paste",
+      "item.create_industrial.cobalt_lithium_paste_bucket": "Cobalt Lithium Paste Bucket",
+      "block.create_industrial.sticky_graphite": "Sticky Graphite",
+      "fluid.create_industrial.sticky_graphite": "Sticky Graphite",
+      "fluid_type.create_industrial.sticky_graphite": "Sticky Graphite",
+      "item.create_industrial.sticky_graphite_bucket": "Sticky Graphite Bucket",
+      "item.create_industrial.graphite_ingot": "Graphite Ingot",
+      "item.create_industrial.refined_graphite_ingot": "Refined Graphite Ingot",
+      "item.create_industrial.refined_graphite_paste_bucket": "Refined Graphite Paste Bucket",
+      "fluid.create_industrial.refined_graphite_paste": "Refined Graphite Paste",
+      "block.create_industrial.refined_graphite_paste": "Refined Graphite Paste",
+      "fluid_type.create_industrial.refined_graphite_paste": "Refined Graphite Paste",
+      "item.create_industrial.cobalt_lithium_paste_covered_zinc_sheet": "Cobalt Lithium Paste Covered Zinc Sheet",
+      "item.create_industrial.refined_graphite_paste_covered_copper_sheet": "Refined Graphite Paste Covered Copper Sheet",
+      "item.create_industrial.lithium_ion_cathode_anode_assembly": "Lithium Ion Cathode/Anode Assembly",
+      "item.create_industrial.compressed_lithium_ion_cathode_anode_assembly": "Compressed Lithium Ion Cathode/Anode Assembly",
+      "item.create_industrial.purified_clay_ball": "Purified Clay Ball",
+      "block.create_industrial.molten_plastic": "Molten Plastic",
+      "fluid.create_industrial.molten_plastic": "Molten Plastic",
+      "item.create_industrial.molten_plastic_bucket": "Molten Plastic Bucket",
+      "fluid_type.create_industrial.molten_plastic": "Molten Plastic",
+      "fluid_type.create_industrial.heavy_oil": "Heavy Oil",
+      "fluid.create_industrial.heavy_oil": "Heavy Oil",
+      "block.create_industrial.heavy_oil": "Heavy Oil",
+      "item.create_industrial.heavy_oil_bucket": "Heavy Oil Bucket",
+      "fluid_type.create_industrial.light_oil": "Light Oil",
+      "item.create_industrial.light_oil_bucket": "Light Oil Bucket",
+      "fluid.create_industrial.light_oil": "Light Oil",
+      "block.create_industrial.light_oil": "Light Oil",
+      "fluid_type.create_industrial.propyline": "Propyline",
+      "item.create_industrial.propyline_bucket": "Propyline Bucket",
+      "block.create_industrial.propyline": "Propyline",
+      "fluid.create_industrial.propyline": "Propyline",
+      "item.create_industrial.plastic_ingot": "Plastic Ingot",
+      "item.create_industrial.plastic_sheet": "Plastic Sheet",
+      "item.create_industrial.incomplete_battery_cell": "Incomplete Battery Cell",
+      "item.create_industrial.battery_cell": "Battery Cell",
+      "item.create_industrial.selenide_mud_byproduct": "Selenide Mud Byproduct",
+      "block.create_industrial.sealed_vaccum_chamber": "Sealed Vaccum Chamber",
+      "item.create_industrial.selenide_powder": "Selenide Powder",
+      "gui.create_industrial.sealed_vaccum_chamber_gui.label_vaccum_chamber": "Vaccum Chamber",
+      "item.create_industrial.zs_glass_on_graphite": "Zinc Selenium Glass On Graphite",
+      "item.create_industrial.zs_glass": "Zinc Selenium Glass",
+      "item.create_industrial.purified_zs_glass": "Purified Zinc Selenium Glass",
+      "block.create_industrial.glowstone_fluid": "Glowstone Fluid",
+      "fluid_type.create_industrial.glowstone_fluid": "Glowstone Fluid",
+      "fluid.create_industrial.glowstone_fluid": "Glowstone Fluid",
+      "item.create_industrial.glowstone_fluid_bucket": "Glowstone Fluid Bucket",
+      "item.create_industrial.phosphorus_pellets": "Phosphorus Pellets",
+      "block.create_industrial.silicon_ore": "Silicon Ore",
+      "item.create_industrial.raw_silicon": "Raw Silicon",
+      "item.create_industrial.silicon_seed": "Silicon Seed",
+      "fluid.create_industrial.liquid_silicon": "Molten Silicon",
+      "fluid_type.create_industrial.liquid_silicon": "Molten Silicon",
+      "item.create_industrial.liquid_silicon_bucket": "Molten Silicon Bucket",
+      "block.create_industrial.liquid_silicon": "Molten Silicon",
+      "fluid.create_industrial.purer_molten_silicon": "Purer Molten Silicon",
+      "block.create_industrial.purer_molten_silicon": "Purer Molten Silicon",
+      "fluid_type.create_industrial.purer_molten_silicon": "Purer Molten Silicon",
+      "item.create_industrial.purer_molten_silicon_bucket": "Purer Molten Silicon Bucket",
+      "fluid_type.create_industrial.purest_molten_silicon": "Purest Molten Silicon",
+      "fluid.create_industrial.purest_molten_silicon": "Purest Molten Silicon",
+      "block.create_industrial.purest_molten_silicon": "Purest Molten Silicon",
+      "item.create_industrial.purest_molten_silicon_bucket": "Purest Molten Silicon Bucket",
+      "fluid.create_industrial.molten_boron": "Molten Boron",
+      "item.create_industrial.molten_boron_bucket": "Molten Boron Bucket",
+      "fluid_type.create_industrial.molten_boron": "Molten Boron",
+      "block.create_industrial.molten_boron": "Molten Boron",
+      "block.create_industrial.controlled_slot_inserter": "Controlled Slot Inserter",
+      "gui.create_industrial.controlled_slot_inserter_gui.num": "0",
+      "gui.create_industrial.controlled_slot_inserter_gui.label_slot_id_to_insert_into": "Slot ID to insert into:",
+      "block.create_industrial.controlled_slot_exporter": "Controlled Slot Exporter",
+      "gui.create_industrial.controlled_slot_exporter_gui.num": "0",
+      "gui.create_industrial.controlled_slot_exporter_gui.label_slot_id_to_insert_into": "Slot ID to export from:",
+      "gui.create_industrial.vaccum_chamber_recipe_type.label_heat_vaccum_chamber": "heat vaccum chamber!",
+      "gui.create_industrial.vaccum_chamber_recipe_type.label_requires_electricity_to_heat_vac": "Requires",
+      "gui.create_industrial.vaccum_chamber_recipe_type.label_electricity_to_heat_vaccum_chamb": "electricity to ",
+      "block.create_industrial.controlled_slot_exporter.description_0": "Only works for blocks with inventories that keep their contents after their GUI is closed by the player.",
+      "block.create_industrial.controlled_slot_inserter.description_0": "Only works for blocks with inventories that keep their contents after their GUI is closed by the player."
+    }
+  },
+  "metadata": {
+    "files": [
+      "src/main/java/net/mcreator/createindustrial/init/CreateIndustrialModFluidTypes.java",
+      "src/main/java/net/mcreator/createindustrial/init/CreateIndustrialModFluids.java",
+      "src/main/java/net/mcreator/createindustrial/init/CreateIndustrialModMenus.java",
+      "src/main/java/net/mcreator/createindustrial/init/CreateIndustrialModScreens.java",
+      "src/main/java/net/mcreator/createindustrial/network/MenuStateUpdateMessage.java",
+      "src/main/resources/data/create_industrial/tags/item/jei_empty_tag.json",
+      "src/main/java/net/mcreator/createindustrial/init/CreateIndustrialModJeiPlugin.java",
+      "src/main/java/net/mcreator/createindustrial/init/CreateIndustrialModRecipeTypes.java",
+      "src/main/java/net/mcreator/createindustrial/init/CreateIndustrialModParticles.java",
+      "src/main/java/net/mcreator/createindustrial/init/CreateIndustrialModParticleTypes.java",
+      "src/main/java/net/mcreator/createindustrial/init/CreateIndustrialModBrewingRecipes.java",
+      "src/main/java/net/mcreator/createindustrial/init/CreateIndustrialModBlocks.java",
+      "src/main/java/net/mcreator/createindustrial/init/CreateIndustrialModBlockEntities.java",
+      "src/main/java/net/mcreator/createindustrial/init/CreateIndustrialModItems.java",
+      "src/main/java/net/mcreator/createindustrial/init/CreateIndustrialModTabs.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/net/mcreator/createindustrial/CreateIndustrialMod.java"
+    ]
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "create_industrial",
+    "modName": "Create: Industrial",
+    "version": "1.0.0",
+    "author": "MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [
+      "jei"
+    ],
+    "currentGenerator": "neoforge-1.21.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.createindustrial"
+  },
+  "mcreatorVersion": 202600114619
+}

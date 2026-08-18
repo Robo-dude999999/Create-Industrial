@@ -1,0 +1,17 @@
+{
+  "type": "createdieselgenerators:casting",
+  "ingredients": [
+    {
+      "type": "fluid_stack",
+      "fluid": "create_industrial:sticky_graphite",
+      "amount": 250
+    }
+  ],
+  "mold": "createdieselgenerators:bar",
+  "results": [
+    {
+      "id": "create_industrial:graphite_ingot",
+      "count": 1
+    }
+  ]
+}

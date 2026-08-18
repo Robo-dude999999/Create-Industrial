@@ -1,0 +1,17 @@
+{
+  "type": "createdieselgenerators:casting",
+  "ingredients": [
+    {
+      "type": "fluid_stack",
+      "fluid": "create_industrial:molten_plastic",
+      "amount": 250
+    }
+  ],
+  "mold": "createdieselgenerators:bar",
+  "results": [
+    {
+      "id": "create_industrial:plastic_ingot",
+      "count": 1
+    }
+  ]
+}
