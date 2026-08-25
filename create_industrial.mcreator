@@ -923,6 +923,7 @@
           "src/main/resources/assets/create_industrial/models/block/sealed_vaccum_chamber.json",
           "src/main/java/net/mcreator/createindustrial/block/SealedVaccumChamberBlock.java",
           "src/main/resources/assets/create_industrial/models/item/sealed_vaccum_chamber.json",
+          "src/main/resources/assets/create_industrial/models/block/sealed_vaccum_chamber_0.json",
           "src/main/resources/assets/create_industrial/blockstates/sealed_vaccum_chamber.json"
         ]
       }
@@ -1579,11 +1580,11 @@
       }
     },
     {
-      "name": "SealedVaccumChamberOnRandomClientDisplayTick",
+      "name": "SealedVaccumChamberRedstoneOn",
       "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "sealed_vaccum_chamber_on_random_client_display_tick",
+      "registry_name": "sealed_vaccum_chamber_redstone_on",
       "metadata": {
         "dependencies": [
           {
@@ -1604,7 +1605,115 @@
           }
         ],
         "files": [
-          "src/main/java/net/mcreator/createindustrial/procedures/SealedVaccumChamberOnRandomClientDisplayTickProcedure.java"
+          "src/main/java/net/mcreator/createindustrial/procedures/SealedVaccumChamberRedstoneOnProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "SealedVaccumChamberRedstoneOff",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sealed_vaccum_chamber_redstone_off",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/createindustrial/procedures/SealedVaccumChamberRedstoneOffProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "CompressedAir",
+      "type": "fluid",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "compressed_air",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createindustrial/item/CompressedAirItem.java",
+          "src/main/resources/assets/create_industrial/blockstates/compressed_air.json",
+          "src/main/java/net/mcreator/createindustrial/fluid/CompressedAirFluid.java",
+          "src/main/java/net/mcreator/createindustrial/fluid/types/CompressedAirFluidType.java",
+          "src/main/java/net/mcreator/createindustrial/block/CompressedAirBlock.java",
+          "src/main/resources/assets/create_industrial/models/item/compressed_air_bucket.json",
+          "src/main/resources/assets/create_industrial/models/block/compressed_air.json"
+        ]
+      }
+    },
+    {
+      "name": "CompressedAirBlockAdded",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "compressed_air_block_added",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/createindustrial/procedures/CompressedAirBlockAddedProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "SealedVaccumChamberBlockIsPlacedBy",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sealed_vaccum_chamber_block_is_placed_by",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/createindustrial/procedures/SealedVaccumChamberBlockIsPlacedByProcedure.java"
         ]
       }
     }
@@ -1621,6 +1730,7 @@
       "CUSTOM:CobaltOre"
     ],
     "BLOCKS:minecraft:replaceable": [
+      "~CUSTOM:CompressedAir",
       "~CUSTOM:MoltenBoron",
       "~CUSTOM:PurestMoltenSilicon",
       "~CUSTOM:PurerMoltenSilicon",
@@ -1742,7 +1852,11 @@
       "gui.create_industrial.vaccum_chamber_recipe_type.label_requires_electricity_to_heat_vac": "Requires",
       "gui.create_industrial.vaccum_chamber_recipe_type.label_electricity_to_heat_vaccum_chamb": "electricity to ",
       "block.create_industrial.controlled_slot_exporter.description_0": "Only works for blocks with inventories that keep their contents after their GUI is closed by the player.",
-      "block.create_industrial.controlled_slot_inserter.description_0": "Only works for blocks with inventories that keep their contents after their GUI is closed by the player."
+      "block.create_industrial.controlled_slot_inserter.description_0": "Only works for blocks with inventories that keep their contents after their GUI is closed by the player.",
+      "fluid.create_industrial.compressed_air": "Compressed Air",
+      "fluid_type.create_industrial.compressed_air": "Compressed Air",
+      "block.create_industrial.compressed_air": "Compressed Air",
+      "item.create_industrial.compressed_air_bucket": "Compressed Air Bucket"
     }
   },
   "metadata": {

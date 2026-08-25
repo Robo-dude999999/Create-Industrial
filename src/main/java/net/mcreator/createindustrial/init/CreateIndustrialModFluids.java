@@ -47,6 +47,8 @@ public class CreateIndustrialModFluids {
 	public static final DeferredHolder<Fluid, FlowingFluid> FLOWING_PUREST_MOLTEN_SILICON = REGISTRY.register("flowing_purest_molten_silicon", () -> new PurestMoltenSiliconFluid.Flowing());
 	public static final DeferredHolder<Fluid, FlowingFluid> MOLTEN_BORON = REGISTRY.register("molten_boron", () -> new MoltenBoronFluid.Source());
 	public static final DeferredHolder<Fluid, FlowingFluid> FLOWING_MOLTEN_BORON = REGISTRY.register("flowing_molten_boron", () -> new MoltenBoronFluid.Flowing());
+	public static final DeferredHolder<Fluid, FlowingFluid> COMPRESSED_AIR = REGISTRY.register("compressed_air", () -> new CompressedAirFluid.Source());
+	public static final DeferredHolder<Fluid, FlowingFluid> FLOWING_COMPRESSED_AIR = REGISTRY.register("flowing_compressed_air", () -> new CompressedAirFluid.Flowing());
 
 	@EventBusSubscriber(Dist.CLIENT)
 	public static class FluidsClientSideHandler {
@@ -78,6 +80,8 @@ public class CreateIndustrialModFluids {
 			ItemBlockRenderTypes.setRenderLayer(FLOWING_PUREST_MOLTEN_SILICON.get(), RenderType.translucent());
 			ItemBlockRenderTypes.setRenderLayer(MOLTEN_BORON.get(), RenderType.translucent());
 			ItemBlockRenderTypes.setRenderLayer(FLOWING_MOLTEN_BORON.get(), RenderType.translucent());
+			ItemBlockRenderTypes.setRenderLayer(COMPRESSED_AIR.get(), RenderType.translucent());
+			ItemBlockRenderTypes.setRenderLayer(FLOWING_COMPRESSED_AIR.get(), RenderType.translucent());
 		}
 	}
 }

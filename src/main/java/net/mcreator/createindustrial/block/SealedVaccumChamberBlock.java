@@ -16,9 +16,11 @@ import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.context.BlockPlaceContext;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.MenuProvider;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.Containers;
@@ -31,7 +33,10 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.createindustrial.world.inventory.SealedVaccumChamberGUIMenu;
+import net.mcreator.createindustrial.procedures.SealedVaccumChamberRedstoneOnProcedure;
+import net.mcreator.createindustrial.procedures.SealedVaccumChamberRedstoneOffProcedure;
 import net.mcreator.createindustrial.procedures.SealedVaccumChamberOnTickUpdateProcedure;
+import net.mcreator.createindustrial.procedures.SealedVaccumChamberBlockIsPlacedByProcedure;
 import net.mcreator.createindustrial.block.entity.SealedVaccumChamberBlockEntity;
 
 import io.netty.buffer.Unpooled;
@@ -103,9 +108,25 @@ public class SealedVaccumChamberBlock extends Block implements EntityBlock {
 	}
 
 	@Override
+	public void neighborChanged(BlockState blockstate, Level world, BlockPos pos, Block neighborBlock, BlockPos fromPos, boolean moving) {
+		super.neighborChanged(blockstate, world, pos, neighborBlock, fromPos, moving);
+		if (world.getBestNeighborSignal(pos) > 0) {
+			SealedVaccumChamberRedstoneOnProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
+		} else {
+			SealedVaccumChamberRedstoneOffProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
+		}
+	}
+
+	@Override
 	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, RandomSource random) {
 		super.tick(blockstate, world, pos, random);
 		SealedVaccumChamberOnTickUpdateProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
+	}
+
+	@Override
+	public void setPlacedBy(Level world, BlockPos pos, BlockState blockstate, LivingEntity entity, ItemStack itemstack) {
+		super.setPlacedBy(world, pos, blockstate, entity, itemstack);
+		SealedVaccumChamberBlockIsPlacedByProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 	}
 
 	@Override

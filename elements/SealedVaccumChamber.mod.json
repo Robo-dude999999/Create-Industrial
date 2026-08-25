@@ -14,7 +14,40 @@
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
-    "states": [],
+    "states": [
+      {
+        "texture": "basin",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "renderType": 2,
+        "customModelName": "vaccum_chamber_open:default",
+        "particleTexture": "basin",
+        "hasCustomBoundingBox": false,
+        "boundingBoxes": [
+          {
+            "mx": 0.0,
+            "my": 0.0,
+            "mz": 0.0,
+            "Mx": 16.0,
+            "My": 16.0,
+            "Mz": 16.0,
+            "subtract": false
+          }
+        ],
+        "stateMap": [
+          {
+            "property": {
+              "name": "CUSTOM:deployerabove",
+              "type": "logic"
+            },
+            "value": true
+          }
+        ]
+      }
+    ],
     "animations": [],
     "itemTexture": "",
     "particleTexture": "",
@@ -269,11 +302,27 @@
     "energyCapacity": 400000,
     "energyMaxReceive": 200,
     "energyMaxExtract": 200,
-    "isFluidTank": false,
+    "isFluidTank": true,
     "fluidCapacity": 8000,
-    "fluidRestrictions": [],
+    "fluidRestrictions": [
+      {
+        "value": "CUSTOM:CompressedAir"
+      },
+      {
+        "value": "CUSTOM:CompressedAir:Flowing"
+      }
+    ],
     "onTickUpdate": {
       "name": "SealedVaccumChamberOnTickUpdate"
+    },
+    "onBlockPlayedBy": {
+      "name": "SealedVaccumChamberBlockIsPlacedBy"
+    },
+    "onRedstoneOn": {
+      "name": "SealedVaccumChamberRedstoneOn"
+    },
+    "onRedstoneOff": {
+      "name": "SealedVaccumChamberRedstoneOff"
     },
     "generateFeature": false,
     "restrictionBiomes": [],

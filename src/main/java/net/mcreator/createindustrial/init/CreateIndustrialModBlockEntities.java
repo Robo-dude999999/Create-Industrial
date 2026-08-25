@@ -40,6 +40,7 @@ public class CreateIndustrialModBlockEntities {
 	@SubscribeEvent
 	public static void registerCapabilities(RegisterCapabilitiesEvent event) {
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, SEALED_VACCUM_CHAMBER.get(), SidedInvWrapper::new);
+		event.registerBlockEntity(Capabilities.FluidHandler.BLOCK, SEALED_VACCUM_CHAMBER.get(), (blockEntity, side) -> blockEntity.getFluidTank());
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, CONTROLLED_SLOT_INSERTER.get(), SidedInvWrapper::new);
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, CONTROLLED_SLOT_EXPORTER.get(), SidedInvWrapper::new);
 	}

@@ -99,5 +99,9 @@
   "gui.create_industrial.vaccum_chamber_recipe_type.label_requires_electricity_to_heat_vac": "Requires",
   "gui.create_industrial.vaccum_chamber_recipe_type.label_electricity_to_heat_vaccum_chamb": "electricity to ",
   "block.create_industrial.controlled_slot_exporter.description_0": "Only works for blocks with inventories that keep their contents after their GUI is closed by the player.",
-  "block.create_industrial.controlled_slot_inserter.description_0": "Only works for blocks with inventories that keep their contents after their GUI is closed by the player."
+  "block.create_industrial.controlled_slot_inserter.description_0": "Only works for blocks with inventories that keep their contents after their GUI is closed by the player.",
+  "fluid.create_industrial.compressed_air": "Compressed Air",
+  "fluid_type.create_industrial.compressed_air": "Compressed Air",
+  "block.create_industrial.compressed_air": "Compressed Air",
+  "item.create_industrial.compressed_air_bucket": "Compressed Air Bucket"
 }

@@ -1,5 +1,7 @@
 package net.mcreator.createindustrial.block.entity;
 
+import net.neoforged.neoforge.fluids.capability.templates.FluidTank;
+
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.entity.RandomizableContainerBlockEntity;
 import net.minecraft.world.item.ItemStack;
@@ -17,6 +19,7 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.createindustrial.world.inventory.SealedVaccumChamberGUIMenu;
+import net.mcreator.createindustrial.init.CreateIndustrialModFluids;
 import net.mcreator.createindustrial.init.CreateIndustrialModBlockEntities;
 
 import javax.annotation.Nullable;
@@ -38,6 +41,8 @@ public class SealedVaccumChamberBlockEntity extends RandomizableContainerBlockEn
 		if (!this.tryLoadLootTable(compound))
 			this.stacks = NonNullList.withSize(this.getContainerSize(), ItemStack.EMPTY);
 		ContainerHelper.loadAllItems(compound, this.stacks, lookupProvider);
+		if (compound.get("fluidTank") instanceof CompoundTag compoundTag)
+			fluidTank.readFromNBT(lookupProvider, compoundTag);
 	}
 
 	@Override
@@ -46,6 +51,7 @@ public class SealedVaccumChamberBlockEntity extends RandomizableContainerBlockEn
 		if (!this.trySaveLootTable(compound)) {
 			ContainerHelper.saveAllItems(compound, this.stacks, lookupProvider);
 		}
+		compound.put("fluidTank", fluidTank.writeToNBT(lookupProvider, new CompoundTag()));
 	}
 
 	@Override
@@ -124,5 +130,24 @@ public class SealedVaccumChamberBlockEntity extends RandomizableContainerBlockEn
 		if (index == 2)
 			return false;
 		return true;
+	}
+
+	private final FluidTank fluidTank = new FluidTank(8000, fs -> {
+		if (fs.getFluid() == CreateIndustrialModFluids.COMPRESSED_AIR.get())
+			return true;
+		if (fs.getFluid() == CreateIndustrialModFluids.FLOWING_COMPRESSED_AIR.get())
+			return true;
+		return false;
+	}) {
+		@Override
+		protected void onContentsChanged() {
+			super.onContentsChanged();
+			setChanged();
+			level.sendBlockUpdated(worldPosition, level.getBlockState(worldPosition), level.getBlockState(worldPosition), 2);
+		}
+	};
+
+	public FluidTank getFluidTank() {
+		return fluidTank;
 	}
 }

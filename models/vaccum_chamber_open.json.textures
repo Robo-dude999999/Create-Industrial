@@ -1,0 +1,15 @@
+{
+  "mappings": {
+    "default": {
+      "name": "default",
+      "map": {
+        "1": "basin_side",
+        "2": "basin_canal",
+        "3": "framed_glass",
+        "4": "basin",
+        "5": "basin_heater",
+        "6": "conductive_casing"
+      }
+    }
+  }
+}

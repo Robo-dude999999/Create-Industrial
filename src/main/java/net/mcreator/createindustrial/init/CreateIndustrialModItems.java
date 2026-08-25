@@ -73,6 +73,7 @@ public class CreateIndustrialModItems {
 	public static final DeferredItem<Item> MOLTEN_BORON_BUCKET;
 	public static final DeferredItem<Item> CONTROLLED_SLOT_INSERTER;
 	public static final DeferredItem<Item> CONTROLLED_SLOT_EXPORTER;
+	public static final DeferredItem<Item> COMPRESSED_AIR_BUCKET;
 	static {
 		INDUSTRIAL_IRON_ALLOY = REGISTRY.register("industrial_iron_alloy", IndustrialIronAlloyItem::new);
 		UNFIRED_CRUCIBLE = REGISTRY.register("unfired_crucible", UnfiredCrucibleItem::new);
@@ -125,6 +126,7 @@ public class CreateIndustrialModItems {
 		MOLTEN_BORON_BUCKET = REGISTRY.register("molten_boron_bucket", MoltenBoronItem::new);
 		CONTROLLED_SLOT_INSERTER = block(CreateIndustrialModBlocks.CONTROLLED_SLOT_INSERTER);
 		CONTROLLED_SLOT_EXPORTER = block(CreateIndustrialModBlocks.CONTROLLED_SLOT_EXPORTER);
+		COMPRESSED_AIR_BUCKET = REGISTRY.register("compressed_air_bucket", CompressedAirItem::new);
 	}
 
 	// Start of user code block custom items
@@ -144,6 +146,7 @@ public class CreateIndustrialModItems {
 		event.registerItem(Capabilities.FluidHandler.ITEM, (stack, context) -> new FluidBucketWrapper(stack), PURER_MOLTEN_SILICON_BUCKET.get());
 		event.registerItem(Capabilities.FluidHandler.ITEM, (stack, context) -> new FluidBucketWrapper(stack), PUREST_MOLTEN_SILICON_BUCKET.get());
 		event.registerItem(Capabilities.FluidHandler.ITEM, (stack, context) -> new FluidBucketWrapper(stack), MOLTEN_BORON_BUCKET.get());
+		event.registerItem(Capabilities.FluidHandler.ITEM, (stack, context) -> new FluidBucketWrapper(stack), COMPRESSED_AIR_BUCKET.get());
 	}
 
 	private static DeferredItem<Item> block(DeferredHolder<Block, Block> block) {

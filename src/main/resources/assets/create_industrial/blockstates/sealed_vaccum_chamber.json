@@ -1,17 +1,32 @@
 {
   "variants": {
-    "facing=north": {
+    "facing=north,deployerabove=true": {
+      "model": "create_industrial:block/sealed_vaccum_chamber_0"
+    },
+    "facing=north,deployerabove=false": {
       "model": "create_industrial:block/sealed_vaccum_chamber"
     },
-    "facing=east": {
+    "facing=east,deployerabove=true": {
+      "model": "create_industrial:block/sealed_vaccum_chamber_0",
+      "y": 90
+    },
+    "facing=east,deployerabove=false": {
       "model": "create_industrial:block/sealed_vaccum_chamber",
       "y": 90
     },
-    "facing=south": {
+    "facing=south,deployerabove=true": {
+      "model": "create_industrial:block/sealed_vaccum_chamber_0",
+      "y": 180
+    },
+    "facing=south,deployerabove=false": {
       "model": "create_industrial:block/sealed_vaccum_chamber",
       "y": 180
     },
-    "facing=west": {
+    "facing=west,deployerabove=true": {
+      "model": "create_industrial:block/sealed_vaccum_chamber_0",
+      "y": 270
+    },
+    "facing=west,deployerabove=false": {
       "model": "create_industrial:block/sealed_vaccum_chamber",
       "y": 270
     }
