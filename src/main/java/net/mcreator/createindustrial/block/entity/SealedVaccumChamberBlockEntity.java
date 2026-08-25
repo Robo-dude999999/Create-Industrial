@@ -83,6 +83,11 @@ public class SealedVaccumChamberBlockEntity extends RandomizableContainerBlockEn
 	}
 
 	@Override
+	public int getMaxStackSize() {
+		return 1;
+	}
+
+	@Override
 	public AbstractContainerMenu createMenu(int id, Inventory inventory) {
 		return new SealedVaccumChamberGUIMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(this.worldPosition));
 	}

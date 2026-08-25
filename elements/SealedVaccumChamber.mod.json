@@ -285,7 +285,7 @@
     "guiBoundTo": "SealedVaccumChamberGUI",
     "openGUIOnRightClick": true,
     "inventorySize": 5,
-    "inventoryStackSize": 99,
+    "inventoryStackSize": 1,
     "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": false,
     "inventoryOutSlotIDs": [
