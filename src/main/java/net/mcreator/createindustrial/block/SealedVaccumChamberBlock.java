@@ -6,8 +6,9 @@ import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
+import net.minecraft.world.level.block.state.properties.IntegerProperty;
+import net.minecraft.world.level.block.state.properties.EnumProperty;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
-import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -24,6 +25,7 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.MenuProvider;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.Containers;
+import net.minecraft.util.StringRepresentable;
 import net.minecraft.util.RandomSource;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
@@ -35,7 +37,7 @@ import net.minecraft.core.BlockPos;
 import net.mcreator.createindustrial.world.inventory.SealedVaccumChamberGUIMenu;
 import net.mcreator.createindustrial.procedures.SealedVaccumChamberRedstoneOnProcedure;
 import net.mcreator.createindustrial.procedures.SealedVaccumChamberRedstoneOffProcedure;
-import net.mcreator.createindustrial.procedures.SealedVaccumChamberOnTickUpdateProcedure;
+import net.mcreator.createindustrial.procedures.SealedVaccumChamberOnTickUpdate2Procedure;
 import net.mcreator.createindustrial.procedures.SealedVaccumChamberBlockIsPlacedByProcedure;
 import net.mcreator.createindustrial.block.entity.SealedVaccumChamberBlockEntity;
 
@@ -45,12 +47,13 @@ import com.google.common.collect.ImmutableMap;
 
 public class SealedVaccumChamberBlock extends Block implements EntityBlock {
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
-	public static final BooleanProperty DEPLOYERABOVE = BooleanProperty.create("deployerabove");
+	public static final IntegerProperty TICK = IntegerProperty.create("tick", 0, 80);
+	public static final EnumProperty<ProcessingProperty> PROCESSING = EnumProperty.create("processing", ProcessingProperty.class);
 	private final ImmutableMap<BlockState, VoxelShape> shapes = this.makeShapes();
 
 	public SealedVaccumChamberBlock() {
 		super(BlockBehaviour.Properties.of().mapColor(MapColor.DEEPSLATE).sound(SoundType.METAL).strength(1f, 10f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false).instrument(NoteBlockInstrument.IRON_XYLOPHONE));
-		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(DEPLOYERABOVE, false));
+		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(TICK, 0).setValue(PROCESSING, ProcessingProperty.REGULAR));
 	}
 
 	private ImmutableMap<BlockState, VoxelShape> makeShapes() {
@@ -91,12 +94,12 @@ public class SealedVaccumChamberBlock extends Block implements EntityBlock {
 	@Override
 	protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
 		super.createBlockStateDefinition(builder);
-		builder.add(FACING, DEPLOYERABOVE);
+		builder.add(FACING, TICK, PROCESSING);
 	}
 
 	@Override
 	public BlockState getStateForPlacement(BlockPlaceContext context) {
-		return super.getStateForPlacement(context).setValue(FACING, context.getHorizontalDirection().getOpposite()).setValue(DEPLOYERABOVE, false);
+		return super.getStateForPlacement(context).setValue(FACING, context.getHorizontalDirection().getOpposite()).setValue(TICK, 0).setValue(PROCESSING, ProcessingProperty.REGULAR);
 	}
 
 	public BlockState rotate(BlockState state, Rotation rot) {
@@ -108,19 +111,26 @@ public class SealedVaccumChamberBlock extends Block implements EntityBlock {
 	}
 
 	@Override
+	public void onPlace(BlockState blockstate, Level world, BlockPos pos, BlockState oldState, boolean moving) {
+		super.onPlace(blockstate, world, pos, oldState, moving);
+		world.scheduleTick(pos, this, 1);
+	}
+
+	@Override
 	public void neighborChanged(BlockState blockstate, Level world, BlockPos pos, Block neighborBlock, BlockPos fromPos, boolean moving) {
 		super.neighborChanged(blockstate, world, pos, neighborBlock, fromPos, moving);
 		if (world.getBestNeighborSignal(pos) > 0) {
-			SealedVaccumChamberRedstoneOnProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
+			SealedVaccumChamberRedstoneOnProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), blockstate);
 		} else {
-			SealedVaccumChamberRedstoneOffProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
+			SealedVaccumChamberRedstoneOffProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), blockstate);
 		}
 	}
 
 	@Override
 	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, RandomSource random) {
 		super.tick(blockstate, world, pos, random);
-		SealedVaccumChamberOnTickUpdateProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
+		SealedVaccumChamberOnTickUpdate2Procedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), blockstate);
+		world.scheduleTick(pos, this, 1);
 	}
 
 	@Override
@@ -175,6 +185,26 @@ public class SealedVaccumChamberBlock extends Block implements EntityBlock {
 				world.updateNeighbourForOutputSignal(pos, this);
 			}
 			super.onRemove(state, world, pos, newState, isMoving);
+		}
+	}
+
+	public enum ProcessingProperty implements StringRepresentable {
+		DEPLOYER("deployer"), DEPLOYERPROCESSING("deployerprocessing"), REGULAR("regular"), REGULARPROCESSING("regularprocessing");
+
+		private final String name;
+
+		private ProcessingProperty(String name) {
+			this.name = name;
+		}
+
+		@Override
+		public String getSerializedName() {
+			return this.name;
+		}
+
+		@Override
+		public String toString() {
+			return this.name;
 		}
 	}
 }

@@ -24,9 +24,6 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "onSlotChanged": {
-            "name": "VaccumChamberGUITickUpdate"
-          },
           "x": 148,
           "y": 14,
           "locked": false
@@ -46,9 +43,6 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "onSlotChanged": {
-            "name": "VaccumChamberGUITickUpdate"
-          },
           "x": 148,
           "y": 57,
           "locked": false
@@ -68,9 +62,6 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "onSlotChanged": {
-            "name": "VaccumChamberGUITickUpdate"
-          },
           "x": 185,
           "y": 57,
           "locked": false

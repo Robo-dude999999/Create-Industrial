@@ -921,6 +921,7 @@
           "src/main/resources/data/create_industrial/loot_table/blocks/sealed_vaccum_chamber.json",
           "src/main/java/net/mcreator/createindustrial/block/entity/SealedVaccumChamberBlockEntity.java",
           "src/main/resources/assets/create_industrial/models/block/sealed_vaccum_chamber.json",
+          "src/main/resources/assets/create_industrial/models/block/sealed_vaccum_chamber_1.json",
           "src/main/java/net/mcreator/createindustrial/block/SealedVaccumChamberBlock.java",
           "src/main/resources/assets/create_industrial/models/item/sealed_vaccum_chamber.json",
           "src/main/resources/assets/create_industrial/models/block/sealed_vaccum_chamber_0.json",
@@ -987,7 +988,6 @@
       "registry_name": "sealed_vaccum_chamber_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/createindustrial/network/SealedVaccumChamberGUISlotMessage.java",
           "src/main/java/net/mcreator/createindustrial/world/inventory/SealedVaccumChamberGUIMenu.java",
           "src/main/java/net/mcreator/createindustrial/client/gui/SealedVaccumChamberGUIScreen.java"
         ]
@@ -997,7 +997,7 @@
       "name": "SealedVaccumChamberOnTickUpdate",
       "type": "procedure",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "sealed_vaccum_chamber_on_tick_update",
       "metadata": {
         "dependencies": [
@@ -1020,36 +1020,6 @@
         ],
         "files": [
           "src/main/java/net/mcreator/createindustrial/procedures/SealedVaccumChamberOnTickUpdateProcedure.java"
-        ]
-      }
-    },
-    {
-      "name": "VaccumChamberGUITickUpdate",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "vaccum_chamber_gui_tick_update",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/createindustrial/procedures/VaccumChamberGUITickUpdateProcedure.java"
         ]
       }
     },
@@ -1588,6 +1558,10 @@
       "metadata": {
         "dependencies": [
           {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -1617,6 +1591,10 @@
       "registry_name": "sealed_vaccum_chamber_redstone_off",
       "metadata": {
         "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
           {
             "name": "x",
             "type": "number"
@@ -1716,6 +1694,145 @@
           "src/main/java/net/mcreator/createindustrial/procedures/SealedVaccumChamberBlockIsPlacedByProcedure.java"
         ]
       }
+    },
+    {
+      "name": "SealedVaccumChamberOnTickUpdate2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sealed_vaccum_chamber_on_tick_update_2",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/createindustrial/procedures/SealedVaccumChamberOnTickUpdate2Procedure.java"
+        ]
+      }
+    },
+    {
+      "name": "CopperRodAssembly",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_rod_assembly",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createindustrial/item/CopperRodAssemblyItem.java",
+          "src/main/resources/assets/create_industrial/models/item/copper_rod_assembly.json"
+        ]
+      }
+    },
+    {
+      "name": "CopperRodAssemblyRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "copper_rod_assembly_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_industrial/recipe/copper_rod_assembly_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "PolysiliconCoatedCopperRodAssembly",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "polysilicon_coated_copper_rod_assembly",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/create_industrial/models/item/polysilicon_coated_copper_rod_assembly.json",
+          "src/main/java/net/mcreator/createindustrial/item/PolysiliconCoatedCopperRodAssemblyItem.java"
+        ]
+      }
+    },
+    {
+      "name": "PolysiliconCoatedCopperRodAssemblyRecipe",
+      "type": "jeirecipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "polysilicon_coated_copper_rod_assembly_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_industrial/recipe/polysilicon_coated_copper_rod_assembly_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "PolysiliconChunk",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "polysilicon_chunk",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/create_industrial/models/item/polysilicon_chunk.json",
+          "src/main/java/net/mcreator/createindustrial/item/PolysiliconChunkItem.java"
+        ]
+      }
+    },
+    {
+      "name": "PolysiliconChunkRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "polysilicon_chunk_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_industrial/recipe/polysilicon_chunk_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "PurestOfPureMoltenSilicon",
+      "type": "fluid",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purest_of_pure_molten_silicon",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createindustrial/fluid/PurestOfPureMoltenSiliconFluid.java",
+          "src/main/java/net/mcreator/createindustrial/block/PurestOfPureMoltenSiliconBlock.java",
+          "src/main/resources/assets/create_industrial/models/item/purest_of_pure_molten_silicon_bucket.json",
+          "src/main/resources/assets/create_industrial/models/block/purest_of_pure_molten_silicon.json",
+          "src/main/resources/assets/create_industrial/blockstates/purest_of_pure_molten_silicon.json",
+          "src/main/java/net/mcreator/createindustrial/fluid/types/PurestOfPureMoltenSiliconFluidType.java",
+          "src/main/java/net/mcreator/createindustrial/item/PurestOfPureMoltenSiliconItem.java"
+        ]
+      }
+    },
+    {
+      "name": "PurestOfPureMoltenSiliconRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "purest_of_pure_molten_silicon_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_industrial/recipe/purest_of_pure_molten_silicon_recipe.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -1730,6 +1847,7 @@
       "CUSTOM:CobaltOre"
     ],
     "BLOCKS:minecraft:replaceable": [
+      "~CUSTOM:PurestOfPureMoltenSilicon",
       "~CUSTOM:CompressedAir",
       "~CUSTOM:MoltenBoron",
       "~CUSTOM:PurestMoltenSilicon",
@@ -1856,7 +1974,14 @@
       "fluid.create_industrial.compressed_air": "Compressed Air",
       "fluid_type.create_industrial.compressed_air": "Compressed Air",
       "block.create_industrial.compressed_air": "Compressed Air",
-      "item.create_industrial.compressed_air_bucket": "Compressed Air Bucket"
+      "item.create_industrial.compressed_air_bucket": "Compressed Air Bucket",
+      "item.create_industrial.copper_rod_assembly": "Copper Rod Assembly",
+      "item.create_industrial.polysilicon_coated_copper_rod_assembly": "Polysilicon Coated Copper Rod Assembly",
+      "item.create_industrial.polysilicon_chunk": "Polysilicon Chunk",
+      "item.create_industrial.purest_of_pure_molten_silicon_bucket": "Purest Of Pure Molten Silicon Bucket",
+      "block.create_industrial.purest_of_pure_molten_silicon": "Purest Of Pure Molten Silicon",
+      "fluid.create_industrial.purest_of_pure_molten_silicon": "Purest Of Pure Molten Silicon",
+      "fluid_type.create_industrial.purest_of_pure_molten_silicon": "Purest Of Pure Molten Silicon"
     }
   },
   "metadata": {

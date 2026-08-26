@@ -74,6 +74,10 @@ public class CreateIndustrialModItems {
 	public static final DeferredItem<Item> CONTROLLED_SLOT_INSERTER;
 	public static final DeferredItem<Item> CONTROLLED_SLOT_EXPORTER;
 	public static final DeferredItem<Item> COMPRESSED_AIR_BUCKET;
+	public static final DeferredItem<Item> COPPER_ROD_ASSEMBLY;
+	public static final DeferredItem<Item> POLYSILICON_COATED_COPPER_ROD_ASSEMBLY;
+	public static final DeferredItem<Item> POLYSILICON_CHUNK;
+	public static final DeferredItem<Item> PUREST_OF_PURE_MOLTEN_SILICON_BUCKET;
 	static {
 		INDUSTRIAL_IRON_ALLOY = REGISTRY.register("industrial_iron_alloy", IndustrialIronAlloyItem::new);
 		UNFIRED_CRUCIBLE = REGISTRY.register("unfired_crucible", UnfiredCrucibleItem::new);
@@ -127,6 +131,10 @@ public class CreateIndustrialModItems {
 		CONTROLLED_SLOT_INSERTER = block(CreateIndustrialModBlocks.CONTROLLED_SLOT_INSERTER);
 		CONTROLLED_SLOT_EXPORTER = block(CreateIndustrialModBlocks.CONTROLLED_SLOT_EXPORTER);
 		COMPRESSED_AIR_BUCKET = REGISTRY.register("compressed_air_bucket", CompressedAirItem::new);
+		COPPER_ROD_ASSEMBLY = REGISTRY.register("copper_rod_assembly", CopperRodAssemblyItem::new);
+		POLYSILICON_COATED_COPPER_ROD_ASSEMBLY = REGISTRY.register("polysilicon_coated_copper_rod_assembly", PolysiliconCoatedCopperRodAssemblyItem::new);
+		POLYSILICON_CHUNK = REGISTRY.register("polysilicon_chunk", PolysiliconChunkItem::new);
+		PUREST_OF_PURE_MOLTEN_SILICON_BUCKET = REGISTRY.register("purest_of_pure_molten_silicon_bucket", PurestOfPureMoltenSiliconItem::new);
 	}
 
 	// Start of user code block custom items
@@ -147,6 +155,7 @@ public class CreateIndustrialModItems {
 		event.registerItem(Capabilities.FluidHandler.ITEM, (stack, context) -> new FluidBucketWrapper(stack), PUREST_MOLTEN_SILICON_BUCKET.get());
 		event.registerItem(Capabilities.FluidHandler.ITEM, (stack, context) -> new FluidBucketWrapper(stack), MOLTEN_BORON_BUCKET.get());
 		event.registerItem(Capabilities.FluidHandler.ITEM, (stack, context) -> new FluidBucketWrapper(stack), COMPRESSED_AIR_BUCKET.get());
+		event.registerItem(Capabilities.FluidHandler.ITEM, (stack, context) -> new FluidBucketWrapper(stack), PUREST_OF_PURE_MOLTEN_SILICON_BUCKET.get());
 	}
 
 	private static DeferredItem<Item> block(DeferredHolder<Block, Block> block) {

@@ -68,5 +68,9 @@ public class CreateIndustrialModTabs {
 				tabData.accept(CreateIndustrialModItems.MOLTEN_BORON_BUCKET.get());
 				tabData.accept(CreateIndustrialModBlocks.CONTROLLED_SLOT_INSERTER.get().asItem());
 				tabData.accept(CreateIndustrialModBlocks.CONTROLLED_SLOT_EXPORTER.get().asItem());
+				tabData.accept(CreateIndustrialModItems.COPPER_ROD_ASSEMBLY.get());
+				tabData.accept(CreateIndustrialModItems.POLYSILICON_COATED_COPPER_ROD_ASSEMBLY.get());
+				tabData.accept(CreateIndustrialModItems.POLYSILICON_CHUNK.get());
+				tabData.accept(CreateIndustrialModItems.PUREST_OF_PURE_MOLTEN_SILICON_BUCKET.get());
 			}).build());
 }

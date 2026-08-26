@@ -33,6 +33,7 @@ public class CreateIndustrialModBlocks {
 	public static final DeferredBlock<Block> CONTROLLED_SLOT_INSERTER;
 	public static final DeferredBlock<Block> CONTROLLED_SLOT_EXPORTER;
 	public static final DeferredBlock<Block> COMPRESSED_AIR;
+	public static final DeferredBlock<Block> PUREST_OF_PURE_MOLTEN_SILICON;
 	static {
 		LITHIUM_ORE = REGISTRY.register("lithium_ore", LithiumOreBlock::new);
 		COBALT_ORE = REGISTRY.register("cobalt_ore", CobaltOreBlock::new);
@@ -54,6 +55,7 @@ public class CreateIndustrialModBlocks {
 		CONTROLLED_SLOT_INSERTER = REGISTRY.register("controlled_slot_inserter", ControlledSlotInserterBlock::new);
 		CONTROLLED_SLOT_EXPORTER = REGISTRY.register("controlled_slot_exporter", ControlledSlotExporterBlock::new);
 		COMPRESSED_AIR = REGISTRY.register("compressed_air", CompressedAirBlock::new);
+		PUREST_OF_PURE_MOLTEN_SILICON = REGISTRY.register("purest_of_pure_molten_silicon", PurestOfPureMoltenSiliconBlock::new);
 	}
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

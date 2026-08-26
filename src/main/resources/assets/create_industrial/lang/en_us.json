@@ -103,5 +103,12 @@
   "fluid.create_industrial.compressed_air": "Compressed Air",
   "fluid_type.create_industrial.compressed_air": "Compressed Air",
   "block.create_industrial.compressed_air": "Compressed Air",
-  "item.create_industrial.compressed_air_bucket": "Compressed Air Bucket"
+  "item.create_industrial.compressed_air_bucket": "Compressed Air Bucket",
+  "item.create_industrial.copper_rod_assembly": "Copper Rod Assembly",
+  "item.create_industrial.polysilicon_coated_copper_rod_assembly": "Polysilicon Coated Copper Rod Assembly",
+  "item.create_industrial.polysilicon_chunk": "Polysilicon Chunk",
+  "item.create_industrial.purest_of_pure_molten_silicon_bucket": "Purest Of Pure Molten Silicon Bucket",
+  "block.create_industrial.purest_of_pure_molten_silicon": "Purest Of Pure Molten Silicon",
+  "fluid.create_industrial.purest_of_pure_molten_silicon": "Purest Of Pure Molten Silicon",
+  "fluid_type.create_industrial.purest_of_pure_molten_silicon": "Purest Of Pure Molten Silicon"
 }

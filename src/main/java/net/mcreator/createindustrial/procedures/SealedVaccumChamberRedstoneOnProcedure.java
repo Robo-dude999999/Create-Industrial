@@ -1,17 +1,38 @@
 package net.mcreator.createindustrial.procedures;
 
-import net.minecraft.world.level.block.state.properties.BooleanProperty;
+import net.minecraft.world.level.block.state.properties.Property;
+import net.minecraft.world.level.block.state.properties.EnumProperty;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.core.BlockPos;
 
 public class SealedVaccumChamberRedstoneOnProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z) {
-		{
-			BlockPos _pos = BlockPos.containing(x, y, z);
-			BlockState _bs = world.getBlockState(_pos);
-			if (_bs.getBlock().getStateDefinition().getProperty("deployerabove") instanceof BooleanProperty _booleanProp)
-				world.setBlock(_pos, _bs.setValue(_booleanProp, true), 3);
+	public static void execute(LevelAccessor world, double x, double y, double z, BlockState blockstate) {
+		if ((getPropertyByName(blockstate, "processing") instanceof EnumProperty _getep1 ? blockstate.getValue(_getep1).toString() : "").equals("regularprocessing")) {
+			{
+				String _value = "deployerprocessing";
+				BlockPos _pos = BlockPos.containing(x, y, z);
+				BlockState _bs = world.getBlockState(_pos);
+				if (_bs.getBlock().getStateDefinition().getProperty("processing") instanceof EnumProperty _enumProp && _enumProp.getValue(_value).isPresent())
+					world.setBlock(_pos, _bs.setValue(_enumProp, (Enum) _enumProp.getValue(_value).get()), 3);
+			}
+		} else {
+			{
+				String _value = "deployer";
+				BlockPos _pos = BlockPos.containing(x, y, z);
+				BlockState _bs = world.getBlockState(_pos);
+				if (_bs.getBlock().getStateDefinition().getProperty("processing") instanceof EnumProperty _enumProp && _enumProp.getValue(_value).isPresent())
+					world.setBlock(_pos, _bs.setValue(_enumProp, (Enum) _enumProp.getValue(_value).get()), 3);
+			}
 		}
+	}
+
+	private static Property<?> getPropertyByName(BlockState state, String name) {
+		for (Property<?> property : state.getProperties()) {
+			if (property.getName().equals(name)) {
+				return property;
+			}
+		}
+		return null;
 	}
 }

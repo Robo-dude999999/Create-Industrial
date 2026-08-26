@@ -1,32 +1,62 @@
 {
   "variants": {
-    "facing=north,deployerabove=true": {
+    "facing=north,processing=deployer": {
       "model": "create_industrial:block/sealed_vaccum_chamber_0"
     },
-    "facing=north,deployerabove=false": {
+    "facing=north,processing=deployerprocessing": {
+      "model": "create_industrial:block/sealed_vaccum_chamber_1"
+    },
+    "facing=north,processing=regular": {
       "model": "create_industrial:block/sealed_vaccum_chamber"
     },
-    "facing=east,deployerabove=true": {
+    "facing=north,processing=regularprocessing": {
+      "model": "create_industrial:block/sealed_vaccum_chamber"
+    },
+    "facing=east,processing=deployer": {
       "model": "create_industrial:block/sealed_vaccum_chamber_0",
       "y": 90
     },
-    "facing=east,deployerabove=false": {
+    "facing=east,processing=deployerprocessing": {
+      "model": "create_industrial:block/sealed_vaccum_chamber_1",
+      "y": 90
+    },
+    "facing=east,processing=regular": {
       "model": "create_industrial:block/sealed_vaccum_chamber",
       "y": 90
     },
-    "facing=south,deployerabove=true": {
+    "facing=east,processing=regularprocessing": {
+      "model": "create_industrial:block/sealed_vaccum_chamber",
+      "y": 90
+    },
+    "facing=south,processing=deployer": {
       "model": "create_industrial:block/sealed_vaccum_chamber_0",
       "y": 180
     },
-    "facing=south,deployerabove=false": {
+    "facing=south,processing=deployerprocessing": {
+      "model": "create_industrial:block/sealed_vaccum_chamber_1",
+      "y": 180
+    },
+    "facing=south,processing=regular": {
       "model": "create_industrial:block/sealed_vaccum_chamber",
       "y": 180
     },
-    "facing=west,deployerabove=true": {
+    "facing=south,processing=regularprocessing": {
+      "model": "create_industrial:block/sealed_vaccum_chamber",
+      "y": 180
+    },
+    "facing=west,processing=deployer": {
       "model": "create_industrial:block/sealed_vaccum_chamber_0",
       "y": 270
     },
-    "facing=west,deployerabove=false": {
+    "facing=west,processing=deployerprocessing": {
+      "model": "create_industrial:block/sealed_vaccum_chamber_1",
+      "y": 270
+    },
+    "facing=west,processing=regular": {
+      "model": "create_industrial:block/sealed_vaccum_chamber",
+      "y": 270
+    },
+    "facing=west,processing=regularprocessing": {
       "model": "create_industrial:block/sealed_vaccum_chamber",
       "y": 270
     }

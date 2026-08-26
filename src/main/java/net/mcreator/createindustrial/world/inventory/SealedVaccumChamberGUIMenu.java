@@ -1,6 +1,5 @@
 package net.mcreator.createindustrial.world.inventory;
 
-import net.neoforged.neoforge.network.PacketDistributor;
 import net.neoforged.neoforge.items.wrapper.InvWrapper;
 import net.neoforged.neoforge.items.SlotItemHandler;
 import net.neoforged.neoforge.items.ItemStackHandler;
@@ -22,7 +21,6 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.createindustrial.network.SealedVaccumChamberGUISlotMessage;
 import net.mcreator.createindustrial.init.CreateIndustrialModMenus;
 
 import java.util.function.Supplier;
@@ -95,34 +93,16 @@ public class SealedVaccumChamberGUIMenu extends AbstractContainerMenu implements
 			private final int slot = 0;
 			private int x = SealedVaccumChamberGUIMenu.this.x;
 			private int y = SealedVaccumChamberGUIMenu.this.y;
-
-			@Override
-			public void setChanged() {
-				super.setChanged();
-				slotChanged(0, 0, 0);
-			}
 		}));
 		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 23, 54) {
 			private final int slot = 1;
 			private int x = SealedVaccumChamberGUIMenu.this.x;
 			private int y = SealedVaccumChamberGUIMenu.this.y;
-
-			@Override
-			public void setChanged() {
-				super.setChanged();
-				slotChanged(1, 0, 0);
-			}
 		}));
 		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 60, 54) {
 			private final int slot = 2;
 			private int x = SealedVaccumChamberGUIMenu.this.x;
 			private int y = SealedVaccumChamberGUIMenu.this.y;
-
-			@Override
-			public void setChanged() {
-				super.setChanged();
-				slotChanged(2, 0, 0);
-			}
 		}));
 		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 51, 88) {
 			private final int slot = 3;
@@ -274,13 +254,6 @@ public class SealedVaccumChamberGUIMenu extends AbstractContainerMenu implements
 						ihm.setStackInSlot(i, ItemStack.EMPTY);
 				}
 			}
-		}
-	}
-
-	private void slotChanged(int slotid, int ctype, int meta) {
-		if (this.world != null && this.world.isClientSide()) {
-			PacketDistributor.sendToServer(new SealedVaccumChamberGUISlotMessage(slotid, x, y, z, ctype, meta));
-			SealedVaccumChamberGUISlotMessage.handleSlotAction(entity, slotid, ctype, meta, x, y, z);
 		}
 	}
 

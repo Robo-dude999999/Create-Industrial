@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "create_industrial:polysilicon_coated_copper_rod_assembly"
+    }
+  },
+  "result": {
+    "id": "create_industrial:polysilicon_chunk",
+    "count": 3
+  }
+}

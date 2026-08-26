@@ -27,4 +27,5 @@ public class CreateIndustrialModFluidTypes {
 	public static final DeferredHolder<FluidType, FluidType> PUREST_MOLTEN_SILICON_TYPE = REGISTRY.register("purest_molten_silicon", () -> new PurestMoltenSiliconFluidType());
 	public static final DeferredHolder<FluidType, FluidType> MOLTEN_BORON_TYPE = REGISTRY.register("molten_boron", () -> new MoltenBoronFluidType());
 	public static final DeferredHolder<FluidType, FluidType> COMPRESSED_AIR_TYPE = REGISTRY.register("compressed_air", () -> new CompressedAirFluidType());
+	public static final DeferredHolder<FluidType, FluidType> PUREST_OF_PURE_MOLTEN_SILICON_TYPE = REGISTRY.register("purest_of_pure_molten_silicon", () -> new PurestOfPureMoltenSiliconFluidType());
 }

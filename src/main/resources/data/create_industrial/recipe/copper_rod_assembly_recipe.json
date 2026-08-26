@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bbb",
+    " a "
+  ],
+  "key": {
+    "a": {
+      "tag": "c:plates/copper"
+    },
+    "b": {
+      "item": "minecraft:lightning_rod"
+    }
+  },
+  "result": {
+    "id": "create_industrial:copper_rod_assembly",
+    "count": 1
+  }
+}

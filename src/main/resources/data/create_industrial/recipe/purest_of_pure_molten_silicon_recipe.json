@@ -1,0 +1,15 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "item": "create_industrial:polysilicon_chunk"
+    }
+  ],
+  "results": [
+    {
+      "amount": 150,
+      "id": "create_industrial:purest_of_pure_molten_silicon"
+    }
+  ]
+}

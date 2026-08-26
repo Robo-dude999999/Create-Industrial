@@ -1,0 +1,34 @@
+{
+  "_fv": 85,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "vaccum_chamber_recipe_type",
+    "ingredients": [
+      {
+        "value": "CUSTOM:PurestMoltenSilicon.bucket"
+      },
+      {
+        "value": "Blocks.STONE#4"
+      },
+      {
+        "value": "CUSTOM:CopperRodAssembly"
+      }
+    ],
+    "integers": [],
+    "strings": [],
+    "recipetype": "VaccumChamberRecipeType",
+    "results": [
+      {
+        "value": "CUSTOM:PolysiliconCoatedCopperRodAssembly"
+      },
+      {
+        "value": "Items.BUCKET"
+      }
+    ],
+    "resultCounts": [
+      1,
+      2
+    ],
+    "count": 0
+  }
+}

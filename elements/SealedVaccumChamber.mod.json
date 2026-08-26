@@ -40,10 +40,54 @@
         "stateMap": [
           {
             "property": {
-              "name": "CUSTOM:deployerabove",
-              "type": "logic"
+              "arrayData": [
+                "deployer",
+                "deployerprocessing",
+                "regular",
+                "regularprocessing"
+              ],
+              "name": "CUSTOM:processing",
+              "type": "string"
             },
-            "value": true
+            "value": "deployer"
+          }
+        ]
+      },
+      {
+        "texture": "basin",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "renderType": 2,
+        "customModelName": "vaccum_chamber_open:default",
+        "particleTexture": "basin",
+        "hasCustomBoundingBox": false,
+        "boundingBoxes": [
+          {
+            "mx": 0.0,
+            "my": 0.0,
+            "mz": 0.0,
+            "Mx": 16.0,
+            "My": 16.0,
+            "Mz": 16.0,
+            "subtract": false
+          }
+        ],
+        "stateMap": [
+          {
+            "property": {
+              "arrayData": [
+                "deployer",
+                "deployerprocessing",
+                "regular",
+                "regularprocessing"
+              ],
+              "name": "CUSTOM:processing",
+              "type": "string"
+            },
+            "value": "deployerprocessing"
           }
         ]
       }
@@ -189,9 +233,22 @@
     ],
     "customProperties": [
       {
-        "name": "CUSTOM:deployerabove",
-        "type": "logic",
-        "value": false
+        "min": 0,
+        "max": 80,
+        "name": "CUSTOM:tick",
+        "type": "integer",
+        "value": 0
+      },
+      {
+        "arrayData": [
+          "deployer",
+          "deployerprocessing",
+          "regular",
+          "regularprocessing"
+        ],
+        "name": "CUSTOM:processing",
+        "type": "string",
+        "value": "regular"
       }
     ],
     "name": "Sealed Vaccum Chamber",
@@ -225,7 +282,7 @@
     "canRedstoneConnect": false,
     "hasCustomOpacity": true,
     "lightOpacity": 0,
-    "tickRate": 0,
+    "tickRate": 1,
     "tickRandomly": false,
     "isReplaceable": false,
     "canProvidePower": false,
@@ -313,7 +370,7 @@
       }
     ],
     "onTickUpdate": {
-      "name": "SealedVaccumChamberOnTickUpdate"
+      "name": "SealedVaccumChamberOnTickUpdate2"
     },
     "onBlockPlayedBy": {
       "name": "SealedVaccumChamberBlockIsPlacedBy"

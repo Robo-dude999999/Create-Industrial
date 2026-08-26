@@ -1,0 +1,24 @@
+{
+  "type": "create_industrial:vaccum_chamber_recipe_type",
+  "ingredients": [
+    {
+      "item": "create_industrial:purest_molten_silicon_bucket"
+    },
+    {
+      "item": "northstar:liquid_hydrogen_bucket"
+    },
+    {
+      "item": "create_industrial:copper_rod_assembly"
+    }
+  ],
+  "outputs": [
+    {
+      "id": "create_industrial:polysilicon_coated_copper_rod_assembly",
+      "count": 1
+    },
+    {
+      "id": "minecraft:bucket",
+      "count": 2
+    }
+  ]
+}
